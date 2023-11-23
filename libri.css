@@ -1,0 +1,345 @@
+body {
+    background-color:antiquewhite;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#header {
+    padding-bottom: 2%; 
+  }
+.intestazione {
+    display: inline;
+    padding-left: 1%;
+    padding-top: 0%;
+}
+#sfondo {
+    background-image: url(https://wallpaperaccess.com/full/2651240.jpg);
+    background-size: cover;
+    padding-bottom: 10%;
+}
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3em;
+    text-shadow: -3px 3px 0 rgb(118, 32, 32), 2px 2px 0 rgb(119, 35, 35), 0px -0px 0 rgb(0, 0, 0), -0px -0px 0;
+    padding-top: 17%;
+    text-align: center;
+    width: 100%;
+    color: rgb(252, 249, 245);
+}
+#biblioteca {
+    padding-top: 2%;
+    width: 10%;
+}
+#comune {
+    padding-top: 2%;
+    width: 6%;
+}
+span {
+  font-size: 0.7em;
+}
+.topnav {
+    overflow: hidden;
+    background-color:burlywood;
+    display: flex;
+    flex-direction: row;
+}
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 2% 2%;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.topnav a:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+.topnav a.active {
+    background-color: brown;
+    color: white;
+}
+.topnav .search-container {
+    justify-content:end;
+    align-items: end;
+    float: inline-end;
+    width: 30%;
+    height: 30%;
+    margin-top: 0.5%;
+    margin-left: 40%;
+    font-size: 1em;
+    border: none;
+    cursor: pointer; 
+    color: black ;
+}
+.topnav .search-container button {
+    padding: 1% 2%;
+    margin-top: 5%;
+    margin-right: 19%;
+    background: rgb(222, 222, 222);
+    font-size: 0.7em;
+    border: 1% solid gray;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(245, 226, 200);
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 12%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    gap:3%;
+}
+.container > div {
+    background-color: rgb(255, 255, 255);
+    margin: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    font-size: 1em;
+    width: 22%;
+    text-align: center;
+}
+h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkred;
+    font-size: 1.1em; 
+}
+h6 {
+    font-size: 0.9em;
+}
+img {
+    max-width: 55%;
+}
+p {
+    font-size: 0.8em;
+    text-align: center;
+}
+#autore {
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.finepag {
+    background-color: brown;
+    color: beige;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%;
+    margin-bottom: -0.7%;
+    margin-right: -0.6%;
+    margin-left: -0.6%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+}
+#dove {
+    font-size: small;
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+}
+#ora {
+    font-size: small;  
+    text-align: center;
+}
+#E { 
+    font-size: small;
+    text-align: center;
+}
+#martedi {
+    font-size: small;
+    text-align: center;}
+
+footer {
+    color: beige;
+    font-size: small;
+    padding-top: 5%;
+    padding-left: 2%;
+}
+.social {
+    text-align: center;
+}
+.fa-facebook {
+    color: rgb(255, 255, 255);
+    border-radius: 50%;  
+    padding: 5%;
+    font-size: 1.7em;
+    width: 1%;
+    height: 1%;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-instagram {
+    color: rgb(255, 255, 255);
+    font-size: 1.7em;
+    width: 1%;
+    height: 1%;
+    border-radius: 50%;
+    padding: 5%;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+/*-------MOBILE-------*/
+@media only screen and (max-width: 600px){
+    .prev, .next,.text {font-size: 11px}
+    body {
+        background-color:antiquewhite;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #header {
+        padding-bottom: 2%; 
+    }
+    .intestazione {
+        display: inline;
+        padding-left: 1%;
+        padding-top: 0%;
+    }
+    #sfondo {
+        background-image: url(https://wallpaperaccess.com/full/2651240.jpg);
+        background-size: cover;
+        padding-bottom: 10%;
+    }
+    h1 {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 2em;
+        text-shadow: -3px 3px 0 rgb(118, 32, 32), 2px 2px 0 rgb(119, 35, 35), 0px -0px 0 rgb(0, 0, 0), -0px -0px 0;
+        padding-top: 17%;
+        text-align: center;
+        width: 100%;
+        color: rgb(252, 249, 245);
+    }
+    #biblioteca {
+        padding-top: 3%;
+        width: 20%;
+    }
+    #comune {
+        padding-top: 3%;
+        width: 14%;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color:burlywood;
+        display: flex;
+        flex-direction: column;
+    }
+    .topnav a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 2% 2%;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    .topnav a:hover {
+        background-color: antiquewhite;
+        color: black;
+    }
+    .topnav a.active {
+        background-color: brown;
+        color: white;
+    }
+    .topnav .search-container {
+        align-items: center;
+        width: 80%;
+        padding-right: 10%;
+        margin-top: 0.5%;
+        font-size: 0.75em;
+        border: none;
+        cursor: pointer; 
+        color: black ;
+    }
+    .topnav .search-container button {
+        margin-top:  1% 2%;
+        margin-right: 20%;
+        background: rgb(222, 222, 222);
+        font-size: 1.1em;
+        border: 1% solid gray;
+        cursor: pointer; 
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 6%;
+        background-color: rgb(245, 226, 200);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .container > div {
+        background-color: #ffffff;
+        margin: 2%;
+        padding: 3%;
+        font-size: 1.2em;
+        width: 35%;
+        text-align: center;
+    }
+    h5 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: darkred;
+        font-size: 0.7em;
+    }
+    img {
+        max-width: 80%;
+    }
+    #autore {
+        font-size: 0.8em;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic; 
+    } 
+    .finepag {
+        background-color: brown;
+        color: beige;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 2%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.3em;
+    }
+    #dove {
+        font-size: 0.6em;
+        text-align: center;
+        padding-left: auto;
+        padding-right: auto;
+    }
+    #ora {
+        font-size: 0.6em;  
+        text-align: center;
+    }
+    #E { 
+        font-size:  0.6em;
+        text-align: center;
+    }
+    #martedi {
+        font-size:  0.6em;
+        text-align: center;
+    }
+    footer {
+        color: beige;
+        font-size:  0.6em;
+        padding-top: 13%;
+    }
+    .social {
+        text-align: center;
+        padding-top: 10%;
+    }
+    .fa-facebook {
+        color: rgb(255, 255, 255);
+        border-radius: 50%;  
+        padding: 5%;
+        font-size: 1.5em;
+        width: 1%;
+        height: 1%;
+        text-align: center;
+        text-decoration: none;
+    }
+    .fa-instagram {
+        color: rgb(255, 255, 255);
+        border-radius: 50%;  
+        padding: 5%;
+        font-size: 1.5em;
+        width: 1%;
+        height: 1%;
+        text-align: center;
+        text-decoration: none;
+    }
+}
