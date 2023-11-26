@@ -4,7 +4,7 @@ body {
 }
 #header {
     padding-bottom: 2%; 
-  }
+}
 .intestazione {
     display: inline;
     padding-left: 1%;
@@ -14,6 +14,7 @@ body {
     background-image: url(https://wallpaperaccess.com/full/2651240.jpg);
     background-size: cover;
     padding-bottom: 10%;
+    
 }
 h1 {
     font-family: 'Kaushan Script', cursive;
@@ -33,7 +34,7 @@ h1 {
     width: 6%;
 }
 span {
-  font-size: 0.7em;
+    font-size: 0.7em;
 }
 .topnav {
     overflow: hidden;
@@ -99,13 +100,21 @@ span {
     width: 22%;
     text-align: center;
 }
+h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 h5 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: darkred;
     font-size: 1.1em; 
+    padding-bottom: 1%;
 }
 h6 {
     font-size: 0.9em;
+}
+#sottotitolo {
+    color: darkred;
 }
 img {
     max-width: 55%;
@@ -148,185 +157,21 @@ p {
 #martedi {
     font-size: small;
     text-align: center;}
-
-footer {
-    color: beige;
-    font-size: small;
-    padding-top: 5%;
-    padding-left: 2%;
-}
-.social {
-    text-align: center;
-}
-.fa-facebook {
-    color: rgb(255, 255, 255);
-    border-radius: 50%;  
-    padding: 5%;
-    font-size: 1.7em;
-    width: 1%;
-    height: 1%;
-    text-align: center;
-    text-decoration: none;
-}
-.fa-instagram {
-    color: rgb(255, 255, 255);
-    font-size: 1.7em;
-    width: 1%;
-    height: 1%;
-    border-radius: 50%;
-    padding: 5%;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-
-/*-------MOBILE-------*/
-@media only screen and (max-width: 600px){
-    .prev, .next,.text {font-size: 11px}
-    body {
-        background-color:antiquewhite;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    #header {
-        padding-bottom: 2%; 
-    }
-    .intestazione {
-        display: inline;
-        padding-left: 1%;
-        padding-top: 0%;
-    }
-    #sfondo {
-        background-image: url(https://wallpaperaccess.com/full/2651240.jpg);
-        background-size: cover;
-        padding-bottom: 10%;
-    }
-    h1 {
-        font-family: 'Kaushan Script', cursive;
-        font-size: 2em;
-        text-shadow: -3px 3px 0 rgb(118, 32, 32), 2px 2px 0 rgb(119, 35, 35), 0px -0px 0 rgb(0, 0, 0), -0px -0px 0;
-        padding-top: 17%;
-        text-align: center;
-        width: 100%;
-        color: rgb(252, 249, 245);
-    }
-    #biblioteca {
-        padding-top: 3%;
-        width: 20%;
-    }
-    #comune {
-        padding-top: 3%;
-        width: 14%;
-    }
-    .topnav {
-        overflow: hidden;
-        background-color:burlywood;
-        display: flex;
-        flex-direction: column;
-    }
-    .topnav a {
-        float: left;
-        color: black;
-        text-align: center;
-        padding: 2% 2%;
-        text-decoration: none;
-        font-size: 1em;
-    }
-    .topnav a:hover {
-        background-color: antiquewhite;
-        color: black;
-    }
-    .topnav a.active {
-        background-color: brown;
-        color: white;
-    }
-    .topnav .search-container {
-        align-items: center;
-        width: 80%;
-        padding-right: 10%;
-        margin-top: 0.5%;
-        font-size: 0.75em;
-        border: none;
-        cursor: pointer; 
-        color: black ;
-    }
-    .topnav .search-container button {
-        margin-top:  1% 2%;
-        margin-right: 20%;
-        background: rgb(222, 222, 222);
-        font-size: 1.1em;
-        border: 1% solid gray;
-        cursor: pointer; 
-    }
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        padding-right: 6%;
-        background-color: rgb(245, 226, 200);
-        font-family: 'Times New Roman', Times, serif;
-    }
-    .container > div {
-        background-color: #ffffff;
-        margin: 2%;
-        padding: 3%;
-        font-size: 1.2em;
-        width: 35%;
-        text-align: center;
-    }
-    h5 {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: darkred;
-        font-size: 0.7em;
-    }
-    img {
-        max-width: 80%;
-    }
-    #autore {
-        font-size: 0.8em;
-        font-family: 'Times New Roman', Times, serif;
-        font-style: italic; 
-    } 
-    .finepag {
-        background-color: brown;
-        color: beige;
-        padding-top: 3%;
-        padding-bottom: 3%;
-        padding-left: 2%;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 1.3em;
-    }
-    #dove {
-        font-size: 0.6em;
-        text-align: center;
-        padding-left: auto;
-        padding-right: auto;
-    }
-    #ora {
-        font-size: 0.6em;  
-        text-align: center;
-    }
-    #E { 
-        font-size:  0.6em;
-        text-align: center;
-    }
-    #martedi {
-        font-size:  0.6em;
-        text-align: center;
-    }
+    
     footer {
         color: beige;
-        font-size:  0.6em;
-        padding-top: 13%;
+        font-size: small;
+        padding-top: 5%;
+        padding-left: 2%;
     }
     .social {
         text-align: center;
-        padding-top: 10%;
     }
     .fa-facebook {
         color: rgb(255, 255, 255);
         border-radius: 50%;  
         padding: 5%;
-        font-size: 1.5em;
+        font-size: 1.7em;
         width: 1%;
         height: 1%;
         text-align: center;
@@ -334,12 +179,182 @@ footer {
     }
     .fa-instagram {
         color: rgb(255, 255, 255);
-        border-radius: 50%;  
-        padding: 5%;
-        font-size: 1.5em;
+        font-size: 1.7em;
         width: 1%;
         height: 1%;
+        border-radius: 50%;
+        padding: 5%;
         text-align: center;
         text-decoration: none;
     }
-}
+    
+    
+    
+    /*-------MOBILE-------*/
+    @media only screen and (max-width: 600px){
+        .prev, .next,.text {font-size: 11px}
+        body {
+            background-color:antiquewhite;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #header {
+            padding-bottom: 2%; 
+        }
+        .intestazione {
+            display: inline;
+            padding-left: 1%;
+            padding-top: 0%;
+        }
+        #sfondo {
+            background-image: url(https://wallpaperaccess.com/full/2651240.jpg);
+            background-size: cover;
+            padding-bottom: 10%;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+        h1 {
+            font-family: 'Kaushan Script', cursive;
+            font-size: 2em;
+            text-shadow: -3px 3px 0 rgb(118, 32, 32), 2px 2px 0 rgb(119, 35, 35), 0px -0px 0 rgb(0, 0, 0), -0px -0px 0;
+            padding-top: 17%;
+            text-align: center;
+            width: 100%;
+            color: rgb(252, 249, 245);
+        }
+        #biblioteca {
+            padding-top: 3%;
+            width: 20%;
+        }
+        #comune {
+            padding-top: 3%;
+            width: 14%;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color:burlywood;
+            display: flex;
+            flex-direction: column;
+        }
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 2% 2%;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .topnav a:hover {
+            background-color: antiquewhite;
+            color: black;
+        }
+        .topnav a.active {
+            background-color: brown;
+            color: white;
+        }
+        .topnav .search-container {
+            align-items: center;
+            width: 80%;
+            padding-right: 10%;
+            margin-top: 0.5%;
+            font-size: 0.75em;
+            border: none;
+            cursor: pointer; 
+            color: black ;
+        }
+        .topnav .search-container button {
+            margin-top:  1% 2%;
+            margin-right: 20%;
+            background: rgb(222, 222, 222);
+            font-size: 1.1em;
+            border: 1% solid gray;
+            cursor: pointer; 
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding-right: 6%;
+            margin-right: 6%;
+            background-color: rgb(245, 226, 200);
+            width:80%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container > div {
+            background-color: #ffffff;
+            margin: 2%;
+            padding: 3%;
+                        width: 37%;
+            text-align: center;
+        }
+        h5 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: darkred;
+            font-size: 0.9em;
+        }
+        p {
+            font-size: 0.8em;
+        }
+        img {
+            max-width: 80%;
+        }
+        #autore {
+            font-size: 0.8em;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic; 
+        } 
+        .finepag {
+            background-color: brown;
+            color: beige;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-left: 2%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.3em;
+        }
+        #dove {
+            font-size: 0.6em;
+            text-align: center;
+            padding-left: auto;
+            padding-right: auto;
+        }
+        #ora {
+            font-size: 0.6em;  
+            text-align: center;
+        }
+        #E { 
+            font-size:  0.6em;
+            text-align: center;
+        }
+        #martedi {
+            font-size:  0.6em;
+            text-align: center;
+        }
+        footer {
+            color: beige;
+            font-size:  0.6em;
+            padding-top: 13%;
+        }
+        .social {
+            text-align: center;
+            padding-top: 10%;
+        }
+        .fa-facebook {
+            color: rgb(255, 255, 255);
+            border-radius: 50%;  
+            padding: 5%;
+            font-size: 1.5em;
+            width: 1%;
+            height: 1%;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa-instagram {
+            color: rgb(255, 255, 255);
+            border-radius: 50%;  
+            padding: 5%;
+            font-size: 1.5em;
+            width: 1%;
+            height: 1%;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
