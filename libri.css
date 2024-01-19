@@ -1,360 +1,202 @@
-body {
-    background-color:antiquewhite;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#header {
-    padding-bottom: 2%; 
-}
-.intestazione {
-    display: inline;
-    padding-left: 1%;
-    padding-top: 0%;
-}
-#sfondo {
-    background-image: url(https://wallpaperaccess.com/full/2651240.jpg);
-    background-size: cover;
-    padding-bottom: 10%;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca L. Scalese/libri</title>
     
-}
-h1 {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 3em;
-    text-shadow: -3px 3px 0 rgb(118, 32, 32), 2px 2px 0 rgb(119, 35, 35), 0px -0px 0 rgb(0, 0, 0), -0px -0px 0;
-    padding-top: 17%;
-    text-align: center;
-    width: 100%;
-    color: rgb(252, 249, 245);
-}
-#biblioteca {
-    padding-top: 2%;
-    width: 10%;
-}
-#comune {
-    padding-top: 2%;
-    width: 6%;
-}
-span {
-    font-size: 0.7em;
-}
-.topnav {
-    overflow: hidden;
-    background-color:burlywood;
-    display: flex;
-    flex-direction: row;
-}
-.topnav a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 2% 2%;
-    text-decoration: none;
-    font-size: 1em;
-    font-family: 'Times New Roman', Times, serif;
-}
-.topnav a:hover {
-    background-color: antiquewhite;
-    color: black;
-}
-.topnav a.active {
-    background-color: brown;
-    color: white;
-}
-.topnav .search-container {
-    justify-content:end;
-    align-items: end;
-    float: inline-end;
-    width: 30%;
-    height: 30%;
-    margin-top: 0.5%;
-    margin-left: 40%;
-    font-size: 1em;
-    border: none;
-    cursor: pointer; 
-    color: black ;
-}
-.topnav .search-container button {
-    padding: 1% 2%;
-    margin-top: 5%;
-    margin-right: 19%;
-    background: rgb(222, 222, 222);
-    font-size: 0.7em;
-    border: 1% solid gray;
-    cursor: pointer;
-}
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(245, 226, 200);
-    font-family: 'Times New Roman', Times, serif;
-    padding-left: 12%;
-    padding-top: 3%;
-    padding-bottom: 2%;
-    gap:3%;
-}
-.container > div {
-    background-color: rgb(255, 255, 255);
-    margin: 1%;
-    padding-right: 1%;
-    padding-left: 1%;
-    font-size: 1em;
-    width: 22%;
-    text-align: center;
-}
-h2 {
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-h5 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: darkred;
-    font-size: 1.1em; 
-    padding-bottom: 1%;
-}
-h6 {
-    font-size: 0.9em;
-}
-#sottotitolo {
-    color: darkred;
-}
-img {
-    max-width: 55%;
-}
-p {
-    font-size: 0.8em;
-    text-align: center;
-}
-#autore {
-    font-size: 1em;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-}
-.finepag {
-    background-color: brown;
-    color: beige;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding-left: 2%;
-    margin-bottom: -0.7%;
-    margin-right: -0.6%;
-    margin-left: -0.6%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.3em;
-}
-#dove {
-    font-size: small;
-    text-align: center;
-    padding-left: auto;
-    padding-right: auto;
-}
-#ora {
-    font-size: small;  
-    text-align: center;
-}
-#E { 
-    font-size: small;
-    text-align: center;
-}
-#martedi {
-    font-size: small;
-    text-align: center;}
+    <!-- ----- STYLESHEETS ----- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/biblioteca.css">
+    <link rel="stylesheet" href="assets/css/libri.css">
     
-    footer {
-        color: beige;
-        font-size: small;
-        padding-top: 5%;
-        padding-left: 2%;
-    }
-    .social {
-        text-align: center;
-    }
-    .fa-facebook {
-        color: rgb(255, 255, 255);
-        border-radius: 50%;  
-        padding: 5%;
-        font-size: 1.7em;
-        width: 1%;
-        height: 1%;
-        text-align: center;
-        text-decoration: none;
-    }
-    .fa-instagram {
-        color: rgb(255, 255, 255);
-        font-size: 1.7em;
-        width: 1%;
-        height: 1%;
-        border-radius: 50%;
-        padding: 5%;
-        text-align: center;
-        text-decoration: none;
-    }
+    <!-- ----- ICONS ----- -->
+    <link rel="icon" type="image/x-icon"  href="ressources/images/Logo_Biblio-removebg.png">
     
+    <!-- ----- FONTS ----- -->
+    <!-- --- SOCIAL --- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- --- TITOLO --- -->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     
+</head>
+<body>
+    <!-- ----- HEADER ----- LOGHI ----- -->
+    <header id="header">
+        <div class="logos">
+            <a href="Biblioteca-L.Scalese.html">
+                <img src="assets/logos/Logo_Biblio-removebg - re.png" alt="logobiblio" id="logo_biblioteca">
+            </a>
+            <a href="https://www.comune.serrastretta.cz.it/"><img src="assets/logos/Serrastretta-Stemma.gif" alt="logocomune" id="logo_comune">
+            </a>
+            <span>Comune di Serrastretta</span>   
+        </div>
+    </header>    
     
-    /*-------MOBILE-------*/
-    @media only screen and (max-width: 600px){
-        .prev, .next,.text {font-size: 11px}
-        body {
-            background-color:antiquewhite;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-        #header {
-            padding-bottom: 2%; 
-        }
-        .intestazione {
-            display: inline;
-            padding-left: 1%;
-            padding-top: 0%;
-        }
-        #sfondo {
-            background-image: url(https://wallpaperaccess.com/full/2651240.jpg);
-            background-size: cover;
-            padding-bottom: 10%;
-            padding-left: 2%;
-            padding-right: 2%;
-        }
-        h1 {
-            font-family: 'Kaushan Script', cursive;
-            font-size: 2em;
-            text-shadow: -3px 3px 0 rgb(118, 32, 32), 2px 2px 0 rgb(119, 35, 35), 0px -0px 0 rgb(0, 0, 0), -0px -0px 0;
-            padding-top: 17%;
-            text-align: center;
-            width: 100%;
-            color: rgb(252, 249, 245);
-        }
-        #biblioteca {
-            padding-top: 3%;
-            width: 20%;
-        }
-        #comune {
-            padding-top: 3%;
-            width: 14%;
-        }
-        .topnav {
-            overflow: hidden;
-            background-color:burlywood;
-            display: flex;
-            flex-direction: column;
-        }
-        .topnav a {
-            float: left;
-            color: black;
-            text-align: center;
-            padding: 2% 2%;
-            text-decoration: none;
-            font-size: 1em;
-        }
-        .topnav a:hover {
-            background-color: antiquewhite;
-            color: black;
-        }
-        .topnav a.active {
-            background-color: brown;
-            color: white;
-        }
-        .topnav .search-container {
-            align-items: center;
-            width: 80%;
-            padding-right: 10%;
-            margin-top: 0.5%;
-            font-size: 0.75em;
-            border: none;
-            cursor: pointer; 
-            color: black ;
-        }
-        .topnav .search-container button {
-            margin-top:  1% 2%;
-            margin-right: 20%;
-            background: rgb(222, 222, 222);
-            font-size: 1.1em;
-            border: 1% solid gray;
-            cursor: pointer; 
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            padding-right: 6%;
-            margin-right: 6%;
-            background-color: rgb(245, 226, 200);
-            width:80%;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        .container > div {
-            background-color: #ffffff;
-            margin: 2%;
-            padding: 3%;
-                        width: 37%;
-            text-align: center;
-        }
-        h5 {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            color: darkred;
-            font-size: 0.9em;
-        }
-        p {
-            font-size: 0.8em;
-        }
-        img {
-            max-width: 80%;
-        }
-        #autore {
-            font-size: 0.8em;
-            font-family: 'Times New Roman', Times, serif;
-            font-style: italic; 
-        } 
-        .finepag {
-            background-color: brown;
-            color: beige;
-            padding-top: 3%;
-            padding-bottom: 3%;
-            padding-left: 2%;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 1.3em;
-        }
-        #dove {
-            font-size: 0.6em;
-            text-align: center;
-            padding-left: auto;
-            padding-right: auto;
-        }
-        #ora {
-            font-size: 0.6em;  
-            text-align: center;
-        }
-        #E { 
-            font-size:  0.6em;
-            text-align: center;
-        }
-        #martedi {
-            font-size:  0.6em;
-            text-align: center;
-        }
-        footer {
-            color: beige;
-            font-size:  0.6em;
-            padding-top: 13%;
-        }
-        .social {
-            text-align: center;
-            padding-top: 10%;
-        }
-        .fa-facebook {
-            color: rgb(255, 255, 255);
-            border-radius: 50%;  
-            padding: 5%;
-            font-size: 1.5em;
-            width: 1%;
-            height: 1%;
-            text-align: center;
-            text-decoration: none;
-        }
-        .fa-instagram {
-            color: rgb(255, 255, 255);
-            border-radius: 50%;  
-            padding: 5%;
-            font-size: 1.5em;
-            width: 1%;
-            height: 1%;
-            text-align: center;
-            text-decoration: none;
-        }
-    }
+    <div id="sfondo">
+        <h1> Biblioteca Comunale "Luis Scalese"</h1>
+    </div>
+    
+    <nav class="topnav">
+        <a class="active" href="Biblioteca-L.Scalese.html">Home</a>
+        <a href="News.html">News</a>
+        <a href="libri.html">Libri</a>
+        <a href="Eventi.html">Eventi</a>
+        
+      <!-- SEARCH
+      <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  -->
+    </nav>
+    
+    <h2>Nuovi arrivi</h2>
+    
+    <main class="container" id="libri"> <!--Libri-->
+        <div class="libro1">
+            <h5>Dieci piccoli indiani</h5>
+            <img src="https://pensieroprofondo42.files.wordpress.com/2020/01/dicei_piccoli_indiani_agatha_christie_mondadori.jpg" alt="Dieci piccoli indiani">
+            <p id="autore"> Autore: Agatha Christie </p>
+            <p> 
+                Dieci persone, completamente sconosciute tra loro, vengono invitate su un'isola deserta al largo della costa inglese. Una volta giunti sull'isola, gli ospiti scoprono che il loro misterioso ospite non si presenta e che sono completamente isolati dal resto del mondo. In ogni stanza dell'isola, c'è una filastrocca che descrive la morte di dieci piccoli indiani. Uno dopo l'altro, gli ospiti iniziano a morire in modo misterioso, seguendo la filastrocca alla lettera. Con l'assassino che sembra essere uno di loro, gli ospiti cercano di scoprire l'identità del colpevole prima che sia troppo tardi.
+            </p>
+        </div>
+        <div class="libro2">
+            <h5>Se morisse mio marito</h5>
+            <img src="https://www.ibs.it/images/2568912857016_0_424_0_75.jpg" alt="Se morisse mio marito">
+            <p id="autore"> Autore: Agatha Christie </p>
+            <p>
+                L'investigatore Hercule Poirot viene contattato per una questione insolita, ovvero agire come mediatore nella causa di divorzio tra la bellissima attrice Jane Wilkinson e suo marito, Lord Edgware. Jane confessa a Poirot il desiderio di separarsi dal vecchio ed eccentrico marito che però rifiuta il divorzio. La diva afferma inoltre che sarebbe disposta a ricorrere a qualsiasi mezzo pur di ottenere la separazione e chiede poi a Poirot di convincere suo marito a concederle il divorzio. Quando lui, piuttosto riluttante, va dall'uomo con quest'incarico, Lord Edgware gli dice che ha già accordato il divorzio e ha scritto una lettera a Jane per comunicarglielo. Più tardi, la donna afferma di non aver mai ricevuto tale lettera. Il giorno seguente, Lord Edgware viene trovato assassinato.
+            </p>
+        </div>
+        <div class="libro3">
+            <h5>Assassinio sull'orient express</h5>
+            <img src="https://m.media-amazon.com/images/I/417OifwBxcS._AC_UF1000,1000_QL80_.jpg" alt="Assassinio sull'orient express">
+            <p id="autore"> Autore: Agatha Christie </p>
+            <p>
+                L'investigatore belga Hercule Poirot si trova a bordo dell'Orient Express, un lussuoso treno che viaggia da Istanbul a Calais. Durante il viaggio, uno dei passeggeri, Samuel Ratchett, viene brutalmente assassinato nella sua cabina. Poirot viene incaricato di risolvere il mistero, e si immerge in un labirinto di indizi, sospetti e depistaggi. La neve che blocca il treno e l'isolamento dell'ambiente rendono la situazione ancora più tesa. 
+            </p>
+        </div>
+        <div class="libro4">
+            <h5>Storie della buonanotte per bambine ribelli 2</h5>
+            <img src="https://www.ragazzimondadori.it/content/uploads/2018/02/978880468884HIG.JPG" alt="storie della buonanotte per bambine ribelli">
+            <p id="autore">Autrici: Elena Favilli e Francesca Cavallo</p>
+            <p>
+                C'erano una volta cento ragazze che hanno cambiato il mondo. Ora ce ne sono molte, molte di più! Le autrici Cavallo e Favilli tornano con cento nuove storie per ispirare le bambine - e i bambini - a sognare senza confini: Audrey Hepburn, che mangiava tulipani per sopravvivere alla fame ed è poi diventata un'inarrivabile icona di stile e una straordinaria filantropa; Bebe Vio, grintosissima campionessa di scherma malgrado una grave malattia; J.K. Rowling, che ha trasformato il fallimento in un punto di forza e ha cambiato per sempre la storia della letteratura. Poetesse, chirurghe, astronaute, giudici, acrobate, imprenditrici, vulcanologhe: cento nuove avventure, cento nuovi ritratti per ispirarci ancora e dirci che a ogni età, epoca e latitudine, vale sempre la pena di lottare per l'uguaglianza e di procedere a passo svelto verso un futuro più giusto.
+            </p>
+        </div>
+        <div class="libro5">
+            <h5>Storie della buonanotte per bambine ribelli</h5>
+            <h6 id="sottotitolo">100 vite di donne straordinarie</h6>
+            <img src="https://www.ragazzimondadori.it/content/uploads/2017/07/978880467637HIG-635x839.jpg?8d8a97" alt="storie della buonanotte pr bambine ribelli">
+            
+            <p id="autore">Autrici: Elena Favilli e Francesca Cavallo</p>
+            <p>
+                C'era una volta...una principessa? Macché! C'era una volta una bambina che voleva andare su Marte. Ce n'era un'altra che diventò la più forte tennista al mondo e un'altra ancora che scoprì la metamorfosi delle farfalle. Da Serena Williams a Malala Yousafzai, da Rita Levi Montalcini a Frida Kahlo, da Margherita Hack a Michelle Obama, sono 100 le donne raccontate in queste pagine e ritratte da 60 illustratrici provenienti da tutto il mondo. Scienziate, pittrici, astronaute, sollevatrici di pesi, musiciste, giudici, chef... esempi di coraggio, determinazione e generosità per chiunque voglia realizzare i propri sogni.       
+            </p>
+        </div>
+        <div class="libro6">
+            <h5>Il Signore degli Anelli</h5>
+            <img src="https://www.libreriamazzini.it/wp-content/uploads/2020/06/A1194-2.jpg" alt="il signore degli anelli">
+            <h6>Trilogia completa</h6>
+            <p id="autore">Autore: J.R.R. Tolkien</p>
+            <p>
+                La saga del Signore degli Anelli racconta la lotta tra il bene e il male per il possesso dell'Unico Anello, un potente oggetto magico creato dal malvagio Sauron, il signore delle tenebre1. La serie segue le avventure di Frodo Baggins, un giovane hobbit che eredita l'Anello da suo zio Bilbo, che, insieme ad altri 8 compagni, si imbarca in una pericolosa missione per distruggerlo nel fuoco del Monte Fato, l'unico luogo dove può essere annientato. La serie è composta da tre volumi: “La Compagnia dell'Anello”, “Le due torri” e “Il ritorno del re”.
+            </p>
+        </div>
+        <div class="libro7">
+            <h5>Storie della buonanotte per bambine ribelli</h5>
+            <h6 id="sottotitolo">100 storie di donne migranti che hanno cambiato il mondo</h6>
+            <img src="https://m.media-amazon.com/images/I/71fttQAzc9L._AC_UF1000,1000_QL80_.jpg" alt="Storie della buonanotte per bambine ribelli">
+            <p id="autore">Autrici: Elena Favilli, Loredana Baldinucci e Simona Brogli</p>
+            <p>
+                Il libro racconta le vite di cento donne migranti che hanno lasciato il loro paese d'origine per una moltitudine di ragioni diverse: chi per trovare nuove e migliori opportunità, chi per il bisogno di sfuggire a situazioni difficili. Le biografie includono donne come Josephine Baker, ballerina e attivista, Asma Khan, rinomata chef, Alice Guy, la prima regista della storia, Carmen Miranda, la cantante, Rihanna, la cantante e imprenditrice, Marjane Satrapi, la fumettista, e molte altre donne straordinarie.
+            </p>
+        </div>
+        <div class="libro8">
+            <h5>Le Cronache di Narnia</h5>
+            <img src="https://th.bing.com/th/id/R.f0aed1a720b0e91a021536676ca52df3?rik=dkSXWcGNBSxV2w&riu=http%3a%2f%2fwww.libreriamedievale.com%2fsites%2fdefault%2ffiles%2fcronache+9788804548959.jpg&ehk=h%2fCoWJ1k7xnBI3lfmT0EQDg6d1eFqJfpo9x43oLV5QI%3d&risl=&pid=ImgRaw&r=0" alt="cronacheNarnia">
+            <p id="autore">Autore: C.S. Lewis</p>
+            <p>
+                Viaggi fino alla fine del mondo, creature fantastiche, epiche battaglie tra il bene e il male: cosa avrebbe potuto aspettarsi di più un lettore? Scritto nel 1949 da C.S. Lewis, "Il leone, la strega e l'armadio" inaugurò la serie dei sette volumi che sarebbero divenuti celebri come "Le Cronache di Narnia". Un capolavoro che trascende il genere fantasy, ormai riconosciuto tra i classici della letteratura inglese del Novecento. Lewis lo scrisse con la dichiarata intenzione di rivolgersi non solo ai bambini. Un'incredibile girandola di personaggi (fauni, ninfe, streghe, animali parlanti, eroici guerrieri), per il ritmo incalzante dell'avventura, ma anche per l'insolito spessore che tradisce l'immensa cultura dello scrittore.
+            </p>
+        </div>
+        <div class="libro9">
+            <h5>Harry Potter</h5>
+            <img src="https://www.onlinelibri.it/wp-content/uploads/2021/02/Harry-Potter-La-Saga-Completa.jpg" alt="harrypotter-sagacompleta">
+            <h6>Saga Completa</h6>
+            <p id="autore">Autore: J.K.Rowiling</p>
+            <p>
+                Una serie di sette libri che narrano le vicende di Harry Potter, un ragazzo che scopre di essere un mago e che deve affrontare il suo destino di combattere contro il più potente e malvagio signore delle tenebre, Lord Voldemort. Harry non è solo, ma ha al suo fianco due fedeli amici, Ron e Hermione, con cui condivide le lezioni, le sfide e i pericoli della Scuola di Magia e Stregoneria di Hogwarts, un luogo pieno di misteri, segreti e sorprese. La saga di Harry Potter è un viaggio emozionante e coinvolgente nel mondo della magia, dove nulla è come sembra e dove il bene e il male si scontrano in una battaglia epica.
+            </p>
+        </div>
+        
+    </main>
+    
+    <br><br>
+    
+    <p>
+        Per saperne di più su tutti i libri in nostro possesso puoi consultare il <a href="https://www.sblametino.it/"> catalogo online</a> del Sistema Bibliotecario Territoriale del Lametino.
+    </p>
+    <div class="pagination">
+        <a href="#" onclick="window.history.back();">&laquo;</a>
+        <a href="libri.html">1</a>
+        <a class="active" href="libri-pag2.html">2</a>
+        <a href="#" onclick="avanti()">&raquo;</a>
+        
+        
+        <!-- ---------- JAVASCRIPT ---------- -->
+        <script>
+            var paginaCorrente = 1; // Imposta la pagina corrente|sets the current page
+            
+            function avanti() {
+                paginaCorrente++; // Incrementa la pagina corrente|increment the current page
+                window.location.href = "pagina" + paginaCorrente + ".html"; // Naviga alla pagina successiva|navigate to the next page
+            }
+        </script>
+    </div>
+    
+    <br><br>
+    
+    <div class="finepag">
+        <p id="dove">Ci puoi trovare presso la Biblioteca Comunale "Luis Scalese" di Serrastretta,</p>
+        
+        <p id="ora">  dal lunedì al venerdì dalle ore 09.00 alle ore 12.00 </p>
+        <p id="E">&</p>
+        <p id="martedi">il martedì dalle ore 16.30 alle ore 18.00.</p>
+        
+        <!-- ------- SOCIAL ------- -->
+        <div class="social">
+            <a href="https://www.facebook.com/pages/Biblioteca%20Comunale%20%22Luis%20Scalese%22/353942798667776/" class="fa fa-facebook"></a>
+            
+            <a href="https://www.instagram.com/biblio_serrastretta/" class="fa fa-instagram"></a>
+        </div>
+        <br>
+        
+        <!-- ------ FOOTER ------ -->
+        <footer>
+            <span>
+                Autrice sito: Serena Gigliotti
+                <a href="mailto:seregigliotti@gmail.com" style="color: beige"> <br>seregigliotti@gmail.com </a>
+            </span>
+        </footer>
+        
+        
+        
+        <!-- -------- JAVASCRIPT -------- -->
+        <script>
+            function hideAudio() {
+                var x = document.getElementById("myAudio");
+                x.style.display = "none";
+            }
+            function showAudio(){
+                var x = document.getElementById("myAudio");
+                x.style.display = "block";
+            }
+        </script>
+    </div>
+</body>
+</html>
