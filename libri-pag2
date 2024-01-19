@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca L. Scalese/libri</title>
+    
+    <!-- ----- STYLESHEETS ----- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/biblioteca.css">
+    <link rel="stylesheet" href="assets/css/libri.css">
+    
+    <!-- ----- ICONS ----- -->
+    <link rel="icon" type="image/x-icon"  href="Logo_Biblio-removebg.png">
+    
+    <!-- ----- FONTS ----- -->
+    <!-- --- SOCIAL --- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- --- TITOLO --- -->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <!-- ----- HEADER ----- LOGHI ----- -->
+    <header id="header">
+        <div class="logos">
+            <a href="Biblioteca-L.Scalese.html">
+                <img src="assets/logos/Logo_Biblio-removebg - re.png" alt="logobiblio" id="logo_biblioteca">
+            </a>
+            <a href="https://www.comune.serrastretta.cz.it/">
+                <img src="assets/logos/Serrastretta-Stemma.gif" alt="logocomune" id="logo_comune">
+            </a>
+            <span>Comune di Serrastretta</span>   
+        </div>
+    </header>  
+    
+    <div id="sfondo">
+        <h1> Biblioteca Comunale "Luis Scalese"</h1>
+    </div>
+    
+    <nav class="topnav">
+        <a class="active" href="Biblioteca-L.Scalese.html">Home</a>
+        <a href="News.html">News</a>
+        <a href="libri.html">Libri</a>
+        <a href="Eventi.html">Eventi</a>
+        
+        <!-- SEARCH
+      <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  -->
+    </nav>
+    
+    <div class="container" id="libri"> <!--Libri-->
+        <div class="libro1">
+            <h5>Passaggio alle Stelle</h5>
+            <img src="https://friendorfoe.com/g/Italian%20Sci-fi/ital-scifi-u1247.jpg" alt="Passaggio alle Stelle">
+            <p id="autore"> Autore: Vonda N. Mclntyre </p>
+            <p> 
+                La storia narra di un gruppo di astronauti che si imbarcano in una missione per stabilire il primo contatto con una razza aliena. La nave spaziale “Starfarer” è stata progettata per questo scopo e la sua equipaggio è composto da persone provenienti da diverse parti del mondo.
+                Durante il viaggio, l'equipaggio della “Starfarer” dovrà affrontare numerose sfide e insidie, tra cui problemi tecnici, conflitti interni e il rischio di un attacco alieno. Nel corso della missione, i membri dell'equipaggio dovranno anche confrontarsi con le proprie paure e incertezze, e imparare a lavorare insieme per raggiungere il loro obiettivo.
+            </p>
+        </div>
+        <div class="libro2">
+            <h5>Il figlio del mare</h5>
+            <img src="https://www.ilvizzarro.it/media/k2/items/cache/5d9ec0de5a23323db57adfd3c4d5de0f_XL.jpg" alt="Il figlio del mare">
+            <p id="autore"> Autrice: Eliana Iorfida</p>
+            <p>
+                L'alba sullo Ionio calabrese sorprende Bianca in spiaggia. La ragazzina si è addormentata vergine per risvegliarsi, violata, in uno scenario surreale. È stata un'onda a deporle in grembo la perla di una nuova vita? Quel figlio della marea sarà per tutti Jo, pronunciato all'americana da chi non conosce il vero nome del bambino, lo stesso del mare che sembra averlo generato. Sarà un viaggio di ritorno in Calabria, a trent'anni di distanza da quel mattino, a svelare i segreti di una vita trascorsa lontano, nell'oblio. Un viaggio nella memoria, che attraversa l'Italia e il dolore di un bambino divenuto adulto troppo in fretta. Un tuffo nel passato, tra le braccia di una terra che sa essere madre e matrigna; dove la vita resiste, chiama nuova vita e combatte, tenace come le ginestre piegate dal grecale. La terra delle origini narrata come archetipo di se stessa, “luogo non-luogo”, spazio geografico e immaginifico. Una storia declinata secondo l'impalcatura della tragedia greca, dove la prosa dei capitoli intreccia la lirica degli interventi corali.
+            </p>
+        </div>
+        <div class="libro3">
+            <h5>Joyland</h5>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81y963%2B6YzL.jpg" alt="Joyland">
+            <p id="autore">  Autore: Stephen King</p>
+            <p>
+                Estate 1973, Heavens Bay, Carolina del Nord. Devin Jones è uno studente universitario squattrinato e con il cuore a pezzi, perché la sua ragazza lo ha tradito. Per dimenticare lei e guadagnare qualche dollaro, decide di accettare il lavoro in un luna park. Arrivato nel parco divertimenti, viene accolto da un colorito quanto bizzarro gruppo di personaggi: dalla stramba vedova Emmalina Shoplaw, che gli affitta una stanza, ai due coetanei Tom ed Erin, studenti in bolletta come lui e ben presto inseparabili amici; dall'ultranovantenne proprietario del parco al burbero responsabile del Castello del Brivido. Ma Dev scopre anche che il luogo nasconde un terribile segreto: nel Castello, infatti, è rimasto il fantasma di una ragazza uccisa macabramente quattro anni prima. E così, mentre si guadagna il magro stipendio intrattenendo i bambini con il suo costume da mascotte, Devin dovrà anche combattere il male che minaccia Heavens Bay. E difendere la donna della quale nel frattempo si è innamorato.
+            </p>
+        </div>
+        <div class="libro4">
+            <h5>Le guide del Tramonto</h5>
+            <img src="https://th.bing.com/th/id/OIP.5Rv4XCWxgaVj2FVWcKTLNgHaLX?rs=1&pid=ImgDetMain" alt="Le guide del Tramonto">
+            <p id="autore">Autore: Arthur C. Clarke</p>
+            <p>
+                Fine del XX secolo: una razza aliena giunge sulla Terra. Gigantesche astronavi occupano i cieli del pianeta ma i Superni - così gli uomini chiamano i misteriosi visitatori che per decenni non si mostrano e limitano quanto più possibile i contatti - non hanno intenti bellicosi. Usano i loro straordinari poteri non per conquistare il nostro mondo, ma per imporre la fine di ogni ostilità. Tutte le risorse precedentemente destinate agli armamenti vengono così dirottate verso il progresso e inizia una vera Età dell'Oro. Un lungo periodo di pace e prosperità durante il quale però i Superni non consentono viaggi ed esplorazioni spaziali: «Le stelle non sono per l'uomo» avvertono. Solo Jan Rodricks, inquieto astrofisico, continua a chiedersi cosa ci sia oltre l'atmosfera e cerca un modo per aggirare il divieto.
+            </p>
+        </div>
+        <div class="libro5">
+            <h5>L'ora dei dannati</h5>
+            <h6 id="sottotitolo">La Guerra/La Montagna/L'Abisso</h6>
+            <img src="ressources/images/l'ora dei dannati.jpeg" alt="l'ora-dei-dannati" id="dannati">
+            <h6>Trilogia completa</h6>
+            <p id="autore">Autore: Luca Tarenzi </p>
+            <p>
+                La storia è ambientata nell'inferno, nel purgatorio e nel paradiso dantesco e segue i protagonisti, antieroi dell'Inferno dantesco, mentre cercano di fuggire da un universo concentrazionario terribile e durissimo, rappresentato dall'Inferno dantesco. La trilogia è un thriller carcerario dal ritmo serratissimo, che conquista il lettore dalla prima all'ultima pagina. La storia è articolata e complessa, disseminata di colpi di scena, di situazioni che lasciano senza respiro, di scoperte e tradimenti, di personaggi da amare e da odiare.
+            </p>
+        </div>
+        <div class="libro6">
+            <h5>Il colore del sole</h5>
+            <img src="ressources/images/Camilleri.jpg" alt="il-colore-del-sole">
+            <h6></h6>
+            <p id="autore">Autore: Andrea Camilleri</p>
+            <p>
+                La storia segue le vicende di Michelangelo Merisi da Caravaggio, il celebre pittore italiano del XVII secolo, durante il suo soggiorno a Malta e in Sicilia. Il racconto si snoda attraverso il diario autografo del Caravaggio, ritrovato in maniera misteriosa, e la trascrizione di Camilleri del diario, scritto in una lingua seicentesca incolta e involuta. L'ossessione dell'artista per il “sole nero” caratterizza e illumina la travagliata vita di Caravaggio e la sua arte. La trama del romanzo è articolata e complessa, disseminata di colpi di scena, di situazioni che lasciano senza respiro, di scoperte e tradimenti, di personaggi da amare e da odiare.
+            </p>
+        </div>
+        <div class="libro7">
+            <h5>Il destino del cacciatore</h5>
+            <h6 id="sottotitolo"></h6>
+            <img src="https://image.anobii.com/anobi/image_book.php?item_id=01a5911e6d9d7600a0" alt="il-destino-del-cacciatore">
+            <p id="autore">Autrore: Wilbur Smith</p>
+            <p>
+                Africa Orientale, 1906. Con l'appoggio dello zio, il colonnello Penrod Ballantyne, Leon Courtney si unisce ai King's African Rifles, ma ben presto, deluso dalla disonestà che regna nell'esercito, si rende conto che quella vita non fa per lui. Penrod, allora, che conosce la passione del nipote per la caccia grossa, gli propone una delicata missione sotto copertura: spacciandosi per un cacciatore professionista, dovrà spiare i movimenti dei tedeschi, che sembra si stiano preparando a combattere per la Germania del Kaiser, e raccogliere informazioni su un ricco industriale, il Conte Otto von Meerbach. Quello in cui si ritrova coinvolto è un gioco pericoloso e intrigante, eppure Leon non dimentica il suo vero obiettivo nemmeno quando conosce Eva von Wellberg, la bellissima ed enigmatica amante del magnate tedesco, e se ne innamora perdutamente. Ma cosa accadrà quando scoprirà che il vero nemico è molto più vicino di quanto abbia mai sospettato?
+            </p>
+        </div>
+        <div class="libro8">
+            <h5>L'ultimo giorno</h5>
+            <img src="https://1.bp.blogspot.com/-hlR_fQb6n2M/T9hoCG4jo-I/AAAAAAAAGTM/hj0-FT519ZU/s1600/Cooper_Ultimo+giorno.jpg" alt="l'Ultimo giorno">
+            <p id="autore">Autore: Glenn Cooper</p>
+            <p>
+                Milano, oggi. È la crisi più grave che il mondo abbia mai attraversato. Disorientati, giovani e anziani, credenti e atei si pongono tutti le stesse, angoscianti domande: cosa faranno ora che il più grande sogno dell'umanità si è trasformato in un incubo? Cosa succederà allo scoccare dell'ultimo giorno? Boston, qualche mese prima. È l'indagine più complessa che Cyrus O'Malley abbia mai affrontato. Sconvolto, il detective dell'FBI osserva le foto delle vittime: per l'ennesima volta, si chiede perché, dopo averle strangolate, il serial killer abbia praticato loro un minuscolo foro alla base del cranio. Per Cyrus, quel caso è diventato un'ossessione. E non importa se, per risolverlo, sarà costretto a rinunciare a tutto ciò che gli è caro? Londra, 1988. È la sensazione più travolgente che Alex Weller abbia mai provato. In estasi, il ragazzo osserva il fiume di luce che scorre davanti a lui: sull'altra sponda c'è suo padre, che lo esorta a raggiungerlo. Ma, per quanto si sforzi, Alex non riesce a muoversi e, d'improvviso, si trova di nuovo incastrato fra le lamiere, sul luogo del terribile incidente d'auto che ha causato la morte dei genitori. Da quel momento, Alex avrà un solo obiettivo: rivivere quell'esperienza. E non importa se, per farlo, sarà costretto a uccidere?
+            </p>
+        </div>
+        <div class="libro9">
+            <h5>Il suggeritore</h5>
+            <img src="https://img.ibs.it/images/9788830430037_0_0_2482_75.jpg" alt="il suggeritore">
+            <h6></h6>
+            <p id="autore">Autore: Donato Carrisi</p>
+            <p>
+                Qualcosa di sconvolgente è accaduto, qualcosa che richiede tutta l'abilità degli agenti della Squadra Speciale guidata dal criminologo Goran Gavila. Il loro è un nemico che sa assumere molte facce, che li mette costantemente alla prova in un'indagine in cui ogni male svelato porta con sé un messaggio. Ma, soprattutto, li costringe ad affacciarsi nel buio che ciascuno si porta dentro. È un gioco di incubi abilmente celati, una continua sfida. Sarà con l'arrivo di Mila Vasquez, un'investigatrice specializzata nella caccia alle persone scomparse, che gli inganni sembreranno cadere uno dopo l'altro, grazie anche al legame speciale che comincia a formarsi fra lei e Gavila. Ma un disegno oscuro è in atto, e ogni volta che la Squadra sembra riuscire a dare un nome al male, ne scopre un altro ancora più profondo...
+            </p>
+        </div>
+        
+        
+        
+    </div>
+    
+    <br><br>
+    
+    <div class="pagination">
+        <a href="#" onclick="window.history.back();">&laquo;</a>
+        <a href="libri.html">1</a>
+        <a class="active" href="libri-pag2.html">2</a>
+        <a href="#" onclick="avanti()">&raquo;</a>
+        
+        <script>
+            var paginaCorrente = 1; // Imposta la pagina corrente
+            
+            function avanti() {
+                paginaCorrente++; // Incrementa la pagina corrente
+                window.location.href = "pagina" + paginaCorrente + ".html"; // Naviga alla pagina successiva
+            }
+        </script>
+    </div>
+    
+    <br><br>
+    
+    <div class="finepag">
+        
+        <p id="dove">Ci puoi trovare presso la Biblioteca Comunale "Luis Scalese" di Serrastretta,</p>
+        
+        <p id="ora">  dal lunedì al venerdì dalle ore 09.00 alle ore 12.00 </p>
+        <p id="E">&</p>
+        <p id="martedi">il martedì dalle ore 16.30 alle ore 18.00</p>
+        
+        
+        <!--- ---- SOCIAL ---- -->
+        <div class="social">
+            <a href="https://www.facebook.com/pages/Biblioteca%20Comunale%20%22Luis%20Scalese%22/353942798667776/" class="fa fa-facebook"></a>
+            
+            <a href="https://www.instagram.com/biblio_serrastretta/" class="fa fa-instagram"></a>
+        </div>
+        
+        <!-- ------ FOOTER ------ -->
+        <footer>
+            <span>
+                Autrice sito: Serena Gigliotti
+                <a href="mailto:seregigliotti@gmail.com" style="color: beige"> <br> seregigliotti@gmail.com </a>
+            </span>
+        </footer>
+        
+    </div>
+    
+    
+    
+    <script>
+        function hideAudio() {
+            var x = document.getElementById("myAudio");
+            x.style.display = "none";
+        }
+        function showAudio(){
+            var x = document.getElementById("myAudio");
+            x.style.display = "block";
+        }
+    </script>
+    
+</body>
+</html>
