@@ -1,0 +1,48 @@
+main {
+    text-align: center;
+    margin-top: 2%;
+}
+#arbiru {
+    width: 20%;    
+}
+text {
+    font-size: 1.5em;
+    font-style: oblique;
+}
+.feste {
+    font-family: Signature;
+    src: url("C:\Users\sery9\Desktop\Dafonts\signature_5\Signature.otf");
+    font-size: 2.7em;
+}
+#holidays {
+    width:40%;
+    border-radius: 20%;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    main {
+        text-align: center;
+        margin-top: 3%;
+        font-size: 1em;
+    }
+    #arbiru {
+        width:50%;
+        margin-top: 2%;
+        border: 2 solid black;   
+    }
+    text {
+        font-size: 1.3em;
+        font-style: oblique;
+    }
+    .feste {
+        font-family: Signature;
+        src: url("C:\Users\sery9\Desktop\Dafonts\signature_5\Signature.otf");
+        font-size:2.1em;
+    }
+    #holidays {
+        width:70%;
+        border-radius: 20%;
+    }
+    
+}
