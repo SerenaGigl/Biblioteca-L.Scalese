@@ -51,6 +51,8 @@ main {
     }
     text {
         font-size: 0.9em;
+        padding-left: 2%;
+        padding-right: 2%;
     }
     main {
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
