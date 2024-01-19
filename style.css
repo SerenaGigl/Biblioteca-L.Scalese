@@ -1,0 +1,309 @@
+body {
+    background-color:antiquewhite;
+    font-size: 0.9em;   
+}
+/* ----- HEADER ----- */
+#header {
+    padding-bottom: 1%;  
+    padding-top: 1%;
+}
+#header > .logos {
+    display: flex;
+    flex: 2 2 90%;  
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: last baseline;
+}
+#header > .logos > * {
+    margin: .5rem;
+}
+img[id^="logo"]{
+    width: 100%;
+    height: 95px;
+    max-width: 250px;
+    max-height: 250px;
+    margin-top: -2%;
+}
+.logos > span {
+    font-size: 0.7em;
+}
+/* ----- MAIN ----- */
+#sfondo {
+    background-image: url(https://wallpaperaccess.com/full/2651240.jpg);
+    background-size: cover;
+    padding-bottom: 10%;
+    margin-top: -2%;
+}
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3em;
+    text-shadow: -3px 3px 0 rgb(118, 32, 32), 2px 2px 0 rgb(119, 35, 35), 0px -0px 0 rgb(0, 0, 0), -0px -0px 0;
+    padding-top: 17%;
+    text-align: center;
+    width: 100%;
+    color: rgb(252, 249, 245);
+}
+/* NAVBAR */
+.topnav {
+    overflow: hidden;
+    background-color:burlywood;
+    display: flex;
+    flex-direction: row;
+}
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 2% 2%;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;    
+}
+.topnav a:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+.topnav a.active {
+    background-color: brown;
+    color: white;
+}
+/* NAVBAR --- SEARCH
+.topnav .search-container {
+    justify-content:end;
+    align-items: end;
+    float: inline-end;
+    width: 30%;
+    height: 30%;
+    margin-top: 0.5%;
+    margin-left: 40%;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer; 
+    color: black ;
+} 
+.topnav .search-container button {
+    padding: 1% 2%;
+    margin-top: 5%;
+    margin-right: 19%;
+    background: rgb(222, 222, 222);
+    font-size: 0.7em;
+    border: 1% solid grey;
+    cursor: pointer;
+}
+*/
+main {
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+/*------------*/
+
+.finepag {
+    background-color: brown;
+    color: beige;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%;
+    margin-bottom: -0.7%;
+    margin-right: -0.6%;
+    margin-left: -0.6%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+}
+#dove {
+    font-size: medium;
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+}
+#ora {
+    font-size: medium;  
+    text-align: center;
+}
+#e { 
+    font-size: medium;
+    text-align: center;
+}
+#martedi {
+    font-size: medium;
+    text-align: center;
+}
+footer {
+    color: beige;
+    font-size: medium;
+    padding-top: 5%;
+    position: relative;
+    margin-right: -25%;
+    font-size: small;
+    
+}
+.social {
+    text-align: center;
+    margin-left: -1%;
+}
+.fa-facebook {
+    color: rgb(255, 255, 255);
+    border-radius: 50%;  
+    padding: 5%;
+    font-size: 1.7em;
+    width: 1%;
+    height: 1%;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-instagram {
+    color: rgb(255, 255, 255);
+    font-size: 1.7em;
+    width: 1%;
+    height: 1%;
+    border-radius: 50%;
+    padding: 5%;
+    
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*-------MOBILE-------*/
+@media only screen and (max-width: 600px){
+    #header {
+        padding-bottom: 1%;  
+        padding-top: 1%;
+    }
+    #header > .logos {
+        margin-top: -1%;
+        justify-content: left;
+    }
+    img[id^="logo"]{
+        width: 95%;
+        padding: .5rem;
+    }
+    .logos > span {
+        font-size: 0.7em;
+    }
+ /*#biblioteca {width: 200px;}*/
+    #comune {
+        height: 80%;
+    }
+    #sfondo {
+        background-image: url(https://wallpaperaccess.com/full/2651240.jpg);
+        background-size: cover;
+        padding-bottom: 10%;
+    }
+    h1 {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 2em;
+        text-shadow: -3px 3px 0 rgb(118, 32, 32), 2px 2px 0 rgb(119, 35, 35), 0px -0px 0 rgb(0, 0, 0), -0px -0px 0;
+        padding-top: 17%;
+        text-align: center;
+        width: 100%;
+        color: rgb(252, 249, 245);
+    }
+    .topnav {
+        overflow: hidden;
+        background-color:burlywood;
+        display: flex;
+        flex-direction: column;
+    }
+    .topnav a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 2% 2%;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    .topnav a:hover {
+        background-color: antiquewhite;
+        color: black;
+    }
+    .topnav a.active {
+        background-color: brown;
+        color: white;
+    }
+    /*.topnav .search-container {
+        align-items: center;
+        width: 90%;
+        margin-right: 20%;
+        margin-top: 0.5%;
+        padding-right: 10%;
+        font-size: 0.75em;
+        border: none;
+        cursor: pointer; 
+        color: black ;
+    }
+    .topnav .search-container button {
+        margin-top:  1% 2%;
+        margin-right: 20%;
+        background: rgb(222, 222, 222);
+        font-size: 1.1em;
+        cursor: pointer; 
+    }*/
+    .logos > span {
+        font-size: 0.7em;
+    }
+    .finepag {
+        background-color: brown;
+        color: beige;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-right: -2%;
+        margin-left: -2%;
+        margin-bottom: -2%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.3em;
+    }
+    #dove {
+        font-size: 0.7em;
+        text-align: center;
+        padding-left: auto;
+        padding-right: auto;
+    }
+    #ora {
+        font-size: 0.7em;  
+        text-align: center;
+    }
+    #e { 
+        font-size:  0.7em;
+        text-align: center;
+    }
+    #martedi {
+        font-size:  0.7em;
+        text-align: center;
+    }
+    footer {
+        color: beige;
+        font-size: medium;
+        padding-top: 15%;
+        font-size: 0.6em;
+        line-height: 150%;
+    }
+    .social {
+        text-align: center;
+        padding-top: 5%;
+    }
+    .fa-facebook {
+        color: rgb(255, 255, 255);
+        border-radius: 50%;  
+        padding: 5%;
+        font-size: 1.5em;
+        width: 1%;
+        height: 1%;
+        text-align: center;
+        text-decoration: none;
+    }
+    .fa-instagram {
+        color: rgb(255, 255, 255);
+        border-radius: 50%;  
+        padding: 5%;
+        font-size: 1.5em;
+        width: 1%;
+        height: 1%;
+        text-align: center;
+        text-decoration: none;
+    }
+}
