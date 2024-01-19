@@ -1,6 +1,7 @@
 body {
     background-color:antiquewhite;
-    font-size: 0.9em;   
+    font-size: 0.9em;
+    overflow-x: hidden;
 }
 /* ----- HEADER ----- */
 #header {
@@ -137,7 +138,6 @@ footer {
     position: relative;
     margin-right: -25%;
     font-size: small;
-    
 }
 .social {
     text-align: center;
@@ -160,7 +160,6 @@ footer {
     height: 1%;
     border-radius: 50%;
     padding: 5%;
-    
     text-align: center;
     text-decoration: none;
 }
@@ -168,6 +167,20 @@ footer {
 
 /*-------MOBILE-------*/
 @media only screen and (max-width: 600px){
+    html {
+        position: fixed;
+        height: 100%;
+        overflow: hidden;
+      }
+      
+      body {
+        margin: 0;
+        width: 100vw;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+      } 
     #header {
         padding-bottom: 1%;  
         padding-top: 1%;
@@ -183,7 +196,7 @@ footer {
     .logos > span {
         font-size: 0.7em;
     }
- /*#biblioteca {width: 200px;}*/
+    /*#biblioteca {width: 200px;}*/   
     #comune {
         height: 80%;
     }
@@ -249,8 +262,8 @@ footer {
         color: beige;
         padding-top: 3%;
         padding-bottom: 3%;
-        padding-left: 2%;
-        padding-right: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
         margin-right: -2%;
         margin-left: -2%;
         margin-bottom: -2%;
@@ -270,6 +283,7 @@ footer {
     #e { 
         font-size:  0.7em;
         text-align: center;
+        margin-right: 0%;
     }
     #martedi {
         font-size:  0.7em;
