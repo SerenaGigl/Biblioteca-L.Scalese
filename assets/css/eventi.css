@@ -42,11 +42,11 @@ main {
         font-family: Libre Baskerville;
         src: url("C:\Users\sery9\Desktop\Dafonts\Libre_Baskerville\LibreBaskerville-Regular.ttf");
         text-align: justify;
-        padding-left: 1%;
-        padding-right: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
     }
     h2 {
-        padding-left: 1%;
+        padding-left: 2%;
         font-size: 1.5em;
     }
     text {
