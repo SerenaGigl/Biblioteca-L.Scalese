@@ -5,45 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca L. Scalese/libri</title>
     
-    <link rel="stylesheet" href="libri.css">
-    <link rel="icon" type="image/x-icon"  href="Logo_Biblio-removebg.png"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--social-->
+    <!-- ----- STYLESHEETS ----- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/biblioteca.css">
+    <link rel="stylesheet" href="assets/css/libri.css">
     
+    <!-- ----- ICONS ----- -->
+    <link rel="icon" type="image/x-icon"  href="ressources/images/Logo_Biblio-removebg.png">
+    
+    <!-- ----- FONTS ----- -->
+    <!-- --- SOCIAL --- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- --- TITOLO --- -->
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     
 </head>
 <body>
-    
-    <div id="header">
-        <div class="intestazione">
-            <a href="Biblioteca-L.Scalese.html"><img src="Logo_Biblio-removebg.png" alt="logobiblio" id="biblioteca"></a>  
-            <a href="https://www.comune.serrastretta.cz.it/"><img src="Serrastretta-Stemma.gif" alt="logocomune" id="comune"></a> 
-            <span>Comune di Serrastretta</span>
-        </div>   
-    </div>    
+    <!-- ----- HEADER ----- LOGHI ----- -->
+    <header id="header">
+        <div class="logos">
+            <a href="Biblioteca-L.Scalese.html">
+                <img src="assets/logos/Logo_Biblio-removebg - re.png" alt="logobiblio" id="logo_biblioteca">
+            </a>
+            <a href="https://www.comune.serrastretta.cz.it/"><img src="assets/logos/Serrastretta-Stemma.gif" alt="logocomune" id="logo_comune">
+            </a>
+            <span>Comune di Serrastretta</span>   
+        </div>
+    </header>    
     
     <div id="sfondo">
         <h1> Biblioteca Comunale "Luis Scalese"</h1>
     </div>
     
-    <div class="topnav">
-        
+    <nav class="topnav">
         <a class="active" href="Biblioteca-L.Scalese.html">Home</a>
-        <a href="#news">News</a>
-        <a href="#libri">Libri</a>
-        <a href="#eventi">Eventi</a>
+        <a href="News.html">News</a>
+        <a href="libri.html">Libri</a>
+        <a href="Eventi.html">Eventi</a>
         
-        <div class="search-container">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
+      <!-- SEARCH
+      <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
     </div>
+  -->
+    </nav>
     
     <h2>Nuovi arrivi</h2>
     
-    <div class="container" id="libri"> <!--Libri-->
+    <main class="container" id="libri"> <!--Libri-->
         <div class="libro1">
             <h5>Dieci piccoli indiani</h5>
             <img src="https://pensieroprofondo42.files.wordpress.com/2020/01/dicei_piccoli_indiani_agatha_christie_mondadori.jpg" alt="Dieci piccoli indiani">
@@ -62,7 +74,7 @@
         </div>
         <div class="libro3">
             <h5>Assassinio sull'orient express</h5>
-            <img src="https://m.media-amazon.com/images/I/417OifwBxcS._AC_UF1000,1000_QL80_.jpg" alt="LaVeritàdelGhiaccio">
+            <img src="https://m.media-amazon.com/images/I/417OifwBxcS._AC_UF1000,1000_QL80_.jpg" alt="Assassinio sull'orient express">
             <p id="autore"> Autore: Agatha Christie </p>
             <p>
                 L'investigatore belga Hercule Poirot si trova a bordo dell'Orient Express, un lussuoso treno che viaggia da Istanbul a Calais. Durante il viaggio, uno dei passeggeri, Samuel Ratchett, viene brutalmente assassinato nella sua cabina. Poirot viene incaricato di risolvere il mistero, e si immerge in un labirinto di indizi, sospetti e depistaggi. La neve che blocca il treno e l'isolamento dell'ambiente rendono la situazione ancora più tesa. 
@@ -87,12 +99,12 @@
             </p>
         </div>
         <div class="libro6">
-            <h5>Il Signore degli anelli</h5>
+            <h5>Il Signore degli Anelli</h5>
             <img src="https://www.libreriamazzini.it/wp-content/uploads/2020/06/A1194-2.jpg" alt="il signore degli anelli">
             <h6>Trilogia completa</h6>
             <p id="autore">Autore: J.R.R. Tolkien</p>
             <p>
-                . La serie segue le avventure di nove personaggi che compongono la Compagnia dellAnello, partiti per distruggere l'Anello del Potere, un'arma che potrebbe rendere invincibile il suo malvagio creatore Sauron se tornasse nelle sue mani, dandogli il potere di dominare tutta la Terra di Mezzo 1. La serie è composta da tre volumi: “La Compagnia dell'Anello”, “Le due torri” e “Il ritorno del re” 23. I libri esplorano temi come l'amicizia, la lealtà, il coraggio e la redenzione 
+                La saga del Signore degli Anelli racconta la lotta tra il bene e il male per il possesso dell'Unico Anello, un potente oggetto magico creato dal malvagio Sauron, il signore delle tenebre1. La serie segue le avventure di Frodo Baggins, un giovane hobbit che eredita l'Anello da suo zio Bilbo, che, insieme ad altri 8 compagni, si imbarca in una pericolosa missione per distruggerlo nel fuoco del Monte Fato, l'unico luogo dove può essere annientato. La serie è composta da tre volumi: “La Compagnia dell'Anello”, “Le due torri” e “Il ritorno del re”.
             </p>
         </div>
         <div class="libro7">
@@ -109,7 +121,7 @@
             <img src="https://th.bing.com/th/id/R.f0aed1a720b0e91a021536676ca52df3?rik=dkSXWcGNBSxV2w&riu=http%3a%2f%2fwww.libreriamedievale.com%2fsites%2fdefault%2ffiles%2fcronache+9788804548959.jpg&ehk=h%2fCoWJ1k7xnBI3lfmT0EQDg6d1eFqJfpo9x43oLV5QI%3d&risl=&pid=ImgRaw&r=0" alt="cronacheNarnia">
             <p id="autore">Autore: C.S. Lewis</p>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut neque iure iusto ducimus excepturi, repudiandae quisquam harum obcaecati repellat deserunt maiores a nemo in odio dolores ex eaque culpa. Iste.
+                Viaggi fino alla fine del mondo, creature fantastiche, epiche battaglie tra il bene e il male: cosa avrebbe potuto aspettarsi di più un lettore? Scritto nel 1949 da C.S. Lewis, "Il leone, la strega e l'armadio" inaugurò la serie dei sette volumi che sarebbero divenuti celebri come "Le Cronache di Narnia". Un capolavoro che trascende il genere fantasy, ormai riconosciuto tra i classici della letteratura inglese del Novecento. Lewis lo scrisse con la dichiarata intenzione di rivolgersi non solo ai bambini. Un'incredibile girandola di personaggi (fauni, ninfe, streghe, animali parlanti, eroici guerrieri), per il ritmo incalzante dell'avventura, ma anche per l'insolito spessore che tradisce l'immensa cultura dello scrittore.
             </p>
         </div>
         <div class="libro9">
@@ -118,75 +130,74 @@
             <h6>Saga Completa</h6>
             <p id="autore">Autore: J.K.Rowiling</p>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut non at velit porro eligendi commodi laudantium aliquam aspernatur. Enim ab nulla animi, architecto ratione tempore nostrum suscipit eius dolore.
+                Una serie di sette libri che narrano le vicende di Harry Potter, un ragazzo che scopre di essere un mago e che deve affrontare il suo destino di combattere contro il più potente e malvagio signore delle tenebre, Lord Voldemort. Harry non è solo, ma ha al suo fianco due fedeli amici, Ron e Hermione, con cui condivide le lezioni, le sfide e i pericoli della Scuola di Magia e Stregoneria di Hogwarts, un luogo pieno di misteri, segreti e sorprese. La saga di Harry Potter è un viaggio emozionante e coinvolgente nel mondo della magia, dove nulla è come sembra e dove il bene e il male si scontrano in una battaglia epica.
             </p>
         </div>
         
-        <div class="libro10">
-            <h3>Sapiens - Da animali a dèi</h3>
-            <img src="" alt="">
-            <h6>Breve storia dell'umanità</h6>
-            <p id="autore">Autore: Yuval Noah Harari</p>
-            <p>
-
-            </p>
-        </div>
+    </main>
+    
+    <br><br>
+    
+    <p>
+        Per saperne di più su tutti i libri in nostro possesso puoi consultare il <a href="https://www.sblametino.it/"> catalogo online</a> del Sistema Bibliotecario Territoriale del Lametino.
+    </p>
+    <div class="pagination">
+        <a href="#" onclick="window.history.back();">&laquo;</a>
+        <a href="libri.html">1</a>
+        <a class="active" href="libri-pag2.html">2</a>
+        <a href="#" onclick="avanti()">&raquo;</a>
+        
+        
+        <!-- ---------- JAVASCRIPT ---------- -->
+        <script>
+            var paginaCorrente = 1; // Imposta la pagina corrente|sets the current page
+            
+            function avanti() {
+                paginaCorrente++; // Incrementa la pagina corrente|increment the current page
+                window.location.href = "pagina" + paginaCorrente + ".html"; // Naviga alla pagina successiva|navigate to the next page
+            }
+        </script>
     </div>
     
-    <br>
-    
-    
-    <audio controls autoplay id="myAudio">
-        <source src="Theme - Inception - Hans Zimmer - Time.mp3" type="audio/mpeg" art="Time-Inception theme">
-        Il tuo browser non supporta l'elemento audio.
-    </audio>
-    
-    <button onclick="hideAudio()">Nascondi audio</button>
-    <button onclick="showAudio()">Mostra audio</button>
-    
-    <script>
-        function hideAudio() {
-            var x = document.getElementById("myAudio");
-            x.style.display = "none";
-        }
-        function showAudio(){
-            var x = document.getElementById("myAudio");
-            x.style.display = "block";
-        }
-    </script>
-    
-    <br>
+    <br><br>
     
     <div class="finepag">
-        
         <p id="dove">Ci puoi trovare presso la Biblioteca Comunale "Luis Scalese" di Serrastretta,</p>
         
         <p id="ora">  dal lunedì al venerdì dalle ore 09.00 alle ore 12.00 </p>
         <p id="E">&</p>
-        <p id="martedi">il martedì dalle ore 16.30 alle ore 18.00</p>
+        <p id="martedi">il martedì dalle ore 16.30 alle ore 18.00.</p>
         
+        <!-- ------- SOCIAL ------- -->
         <div class="social">
             <a href="https://www.facebook.com/pages/Biblioteca%20Comunale%20%22Luis%20Scalese%22/353942798667776/" class="fa fa-facebook"></a>
             
             <a href="https://www.instagram.com/biblio_serrastretta/" class="fa fa-instagram"></a>
         </div>
+        <br>
         
+        <!-- ------ FOOTER ------ -->
         <footer>
-            <span>Author: NameSurname</p><a href="mailto:mymail@example.com" style="color: beige">mymail@example.com </a></span>
+            <span>
+                Autrice sito: Serena Gigliotti
+                <a href="mailto:seregigliotti@gmail.com" style="color: beige"> <br>seregigliotti@gmail.com </a>
+            </span>
         </footer>
         
+        
+        
+        <!-- -------- JAVASCRIPT -------- -->
+        <script>
+            function hideAudio() {
+                var x = document.getElementById("myAudio");
+                x.style.display = "none";
+            }
+            function showAudio(){
+                var x = document.getElementById("myAudio");
+                x.style.display = "block";
+            }
+        </script>
     </div>
-
-    <!--<audio id="mioAudio" controls>
-    <source src="musica.mp3" type="audio/mpeg">
-    Il tuo browser non supporta l'elemento audio.
-</audio>
-
-<script>
-    window.onload = function() {
-        document.getElementById("mioAudio").play();
-    }
-</script>-->
-
 </body>
 </html>
+
