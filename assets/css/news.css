@@ -10,8 +10,7 @@ text {
     font-style: oblique;
 }
 .feste {
-    font-family: Signature, serif;
-    src: url("C:\Users\sery9\Desktop\Dafonts\signature_5\Signature.otf");
+    font-family: 'Ephesis', cursive;
     font-size: 2.7em;
 }
 #holidays {
