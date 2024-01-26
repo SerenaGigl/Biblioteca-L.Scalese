@@ -1,7 +1,10 @@
-body {
-   font-family: Libre Baskerville;
-    src: url("C:\Users\sery9\Desktop\Working Area VSCode\Biblioteca\ressources\Fonts\Libre_Baskerville\LibreBaskerville-Regular.ttf");
+@font-face {
+    font-family:Libre Baskerville;     
+    src: url("C:\Users\sery9\Desktop\Working Area VSCode\Biblioteca\ressources\Fonts\Libre_Baskerville\LibreBaskerville-Regular.ttf") format(truetype);
 }
+    body {
+        font-family: Libre Baskerville, serif;
+    }
 h2 {
     padding-left: 0%;
     font-size: 1.5em;
