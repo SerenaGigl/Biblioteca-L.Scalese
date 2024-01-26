@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca L. Scalese</title>
+  
+  <!-- ----- STYLESHEETS ----- -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/biblioteca.css">
+  <link rel="stylesheet" href="assets/css/news.css">
+  <link rel="stylesheet" href="assets/css/blog.css">    
+  <link rel="stylesheet" href="comment_blog.js">
+  <!-- ------ SCRIPT ------ -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+  
+  <!-- ----- ICONS ----- -->
+  <link rel="icon" type="image/x-icon"  href="Logo_Biblio-removebg.png">
+  
+  <!-- ----- FONTS ----- -->
+  <!-- --- SOCIAL --- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- --- TITOLO --- -->
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  
+  
+</head>
+<body>
+  <!-- ----- HEADER ----- LOGHI ----- -->
+  <header id="header">
+    <div class="logos">
+      <a href="Biblioteca-L.Scalese.html">
+        <img src="assets/logos/Logo_Biblio-removebg - re.png" alt="logobiblio" id="logo_biblioteca">
+      </a>
+      <a href="https://www.comune.serrastretta.cz.it/">
+        <img src="assets/logos/Serrastretta-Stemma.gif" alt="logocomune" id="logo_comune">
+      </a>
+      <span>Comune di Serrastretta</span>   
+    </div>
+  </header>  
+  <div id="sfondo">
+    <h1> Biblioteca Comunale "Luis Scalese"</h1>
+  </div>
+  <nav class="topnav">
+    <a class="active" href="Biblioteca-L.Scalese.html">Home</a>
+    <a href="News.html">News</a>
+    <a href="libri.html">Libri</a>
+    <a href="Eventi.html">Eventi</a>
+    <a href="blog.html">Blog</a>
+    <!-- SEARCH
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    -->
+  </nav>
+  
+  
+  <!-- creare una zona commenti, con registrazione, pubblica dove ognuno può scrivere -->
+  
+  
+  <h2> Benvenuto nel nostro Blog!</h2>
+  
+  
+  <main>
+    <section> 
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 col-md-6 col-12 pb-4">
+            
+            <div class="comment">
+              <img src="lampRock.jpeg" alt="image" class="rounded-circle" >
+              <h4>Jhon Doe</h4>
+              <span>- 20 October, 2018</span>
+              <br>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?
+              </p>
+            </div>
+            
+            <div class="darker">
+              <img src="lampRock.jpeg" alt="immagine" class="rounded-circle" >
+              <h4>Rob Simpson</h4>
+              <span>- 20 October, 2018</span>
+              <br>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?
+              </p>
+            </div>
+            
+            <div class="comment">
+              <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" >
+              <h4>Jhon Doe</h4>
+              <span>- 20 October, 2018</span>
+              <br>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+            </div>
+            
+            <div class="darker">
+              <img src="re" alt="" class="rounded-circle" >
+              <h4>Rob Simpson</h4>
+              <span>- 20 October, 2018</span>
+              <br>
+              <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+            </div>
+            
+          </div>
+          
+        </section>
+        
+        <!--    LEAVE A COMMENT   -->
+        
+        <div class="leave">
+          <form id="comment-form">
+            <div class="form-group">
+              <h2>Lascia un commento</h2>
+              <label for="message">Message</label>
+              <textarea name="msg" id=""msg cols="30" rows="5" class="form-control" style="background-color: white;"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="fullname" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <p class="text-secondary">If you have a <a href="#" class="alert-link">gravatar account</a> your address <br> will be used to display your profile picture.</p>
+            </div>
+            
+            <div class="form-group">
+              <button type="submit" id="post" class="btn">Post Comment</button>
+            </div>
+          </form>
+        </div>
+        
+        
+        
+      </div><!---row-->
+    </div> <!--container-->
+    
+    
+    <!--            -------- FIREBASE -------- -->
+    
+    <div id="comments"></div>
+    <form id="addComment">
+      <input type="text" id="comment" placeholder="Scrivi un commento...">
+      <button type="submit">Invia</button>
+    </form>
+    
+    <script>
+      // Configurazione di Firebase
+      var firebaseConfig = {
+        apiKey: "bigquery.googleapis.com",
+        authDomain: "il-tuo-auth-domain",
+        projectId: "library-project-88730"
+      };
+      // Inizializzazione di Firebase
+      firebase.initializeApp(firebaseConfig);
+      var db = firebase.firestore();
+      
+      // Variabile per tenere traccia del pulsante "Cancella" corrente
+      var currentDeleteButton = null;
+      
+      // Visualizza i commenti
+      db.collection("comments").onSnapshot((snapshot) => {
+        document.getElementById("comments").innerHTML = "";
+        snapshot.forEach((doc) => {
+          var comment = document.createElement("p");
+          comment.textContent = doc.data().text;
+          
+          var deleteButton = document.createElement("button");
+          deleteButton.textContent = "Cancella";
+          deleteButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            db.collection("comments").doc(doc.id).delete();
+          });
+          
+          var commentContainer = document.createElement("div");
+          commentContainer.className = "comment-container";
+          commentContainer.appendChild(comment);
+          commentContainer.appendChild(deleteButton);
+          
+          document.getElementById("comments").appendChild(commentContainer);
+          
+          // Se esiste un pulsante "Cancella" corrente, rimuovilo
+          if (currentDeleteButton) {
+            currentDeleteButton.remove();
+          }
+          
+          // Imposta il nuovo pulsante "Cancella" come corrente
+          currentDeleteButton = deleteButton;
+          
+          // Rimuovi il pulsante "Cancella" dopo 1 minuto
+          setTimeout(() => {
+            deleteButton.remove();
+            if (currentDeleteButton === deleteButton) {
+              currentDeleteButton = null;
+            }
+          }, 1 * 60 * 1000);  // 1 minuto in millisecondi
+        });
+      });
+      
+      // Aggiungi un commento
+      document.getElementById("addComment").addEventListener("submit", (e) => {
+        e.preventDefault();
+        db.collection("comments").add({
+          text: document.getElementById("comment").value
+        });
+        document.getElementById("comment").value = "";
+      });
+    </script> 
+  </main> 
+  
+  <br><br>
+  
+  <div class="finepag">
+    
+    <p id="dove">Ci puoi trovare presso la Biblioteca Comunale "Luis Scalese", in Vico V Castello, di Serrastretta (CZ)</p>
+    <p id="ora">  dal lunedì al venerdì dalle ore 09.00 alle ore 12.00 </p>
+    <p id="e">&</p>
+    <p id="martedi">il martedì dalle ore 16.30 alle ore 18.00</p>
+    
+    <br>
+    
+    <!--- ---- SOCIAL ---- -->
+    <div class="social">
+      <a href="https://www.facebook.com/bibliotecacomunale.luisscalese/?locale=it_IT" class="fa fa-facebook"></a>
+      
+      <a href="https://www.instagram.com/biblio_serrastretta/" class="fa fa-instagram"></a>
+    </div>
+    
+    
+    <!-- ------ FOOTER ------ -->
+    <footer>
+      <span>
+        Autrice sito: Serena Gigliotti
+        <a href="mailto:seregigliotti@gmail.com" style="color: beige"> <br> seregigliotti@gmail.com </a>
+      </span>
+    </footer>
+  </div>
+
+  
+</body>
+</html>
