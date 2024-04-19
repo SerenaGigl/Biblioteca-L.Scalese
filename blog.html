@@ -8,7 +8,7 @@
   <!-- ----- STYLESHEETS ----- -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/blog.css">    
-
+  
   <!-- ------ SCRIPT ------ -->
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
@@ -65,188 +65,212 @@
   
   <main>
     <!--
-    <section> 
-      
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-5 col-md-6 col-12 pb-4">
-            
-            <div class="comment">
-              <img src="lampRock.jpeg" alt="image" class="rounded-circle" >
-              <h4>Jhon Doe</h4>
-              <span>- 20 October, 2018</span>
-              <br>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?
-              </p>
+      <section> 
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 col-md-6 col-12 pb-4">
+              
+              <div class="comment">
+                <img src="lampRock.jpeg" alt="image" class="rounded-circle" >
+                <h4>Jhon Doe</h4>
+                <span>- 20 October, 2018</span>
+                <br>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?
+                </p>
+              </div>
+              
+              <div class="darker">
+                <img src="lampRock.jpeg" alt="immagine" class="rounded-circle" >
+                <h4>Rob Simpson</h4>
+                <span>- 20 October, 2018</span>
+                <br>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?
+                </p>
+              </div>
+              
+              <div class="comment">
+                <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" >
+                <h4>Jhon Doe</h4>
+                <span>- 20 October, 2018</span>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+              </div>
+              
+              <div class="darker">
+                <img src="re" alt="" class="rounded-circle" >
+                <h4>Rob Simpson</h4>
+                <span>- 20 October, 2018</span>
+                <br>
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+              </div>
+              
             </div>
             
-            <div class="darker">
-              <img src="lampRock.jpeg" alt="immagine" class="rounded-circle" >
-              <h4>Rob Simpson</h4>
-              <span>- 20 October, 2018</span>
-              <br>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?
-              </p>
-            </div>
-            
-            <div class="comment">
-              <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" >
-              <h4>Jhon Doe</h4>
-              <span>- 20 October, 2018</span>
-              <br>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-            </div>
-            
-            <div class="darker">
-              <img src="re" alt="" class="rounded-circle" >
-              <h4>Rob Simpson</h4>
-              <span>- 20 October, 2018</span>
-              <br>
-              <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-            </div>
-            
+          </section> 
+          
+          --------- LEAVE A COMMENT  -------------
+          
+          <div class="leave">
+            <form id="comment-form">
+              <div class="form-group">
+                <h2>Lascia un commento</h2>
+                <label for="message">Message</label>
+                <textarea name="msg" id=""msg cols="30" rows="5" class="form-control" style="background-color: white;"></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="fullname" class="form-control">
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" class="form-control">
+              </div>
+              
+              <div class="form-group">
+                <p class="text-secondary">
+                  If you have a <a href="#" class="alert-link">gravatar account</a> your address <br> will be used to display your profile picture.
+                </p>
+              </div>
+              
+              <div class="form-group">
+                <button type="submit" id="post" class="btn">Post Comment</button>
+              </div>
+              
+            </form>
           </div>
           
-        </section> -->
-    
-        <!--    LEAVE A COMMENT  
-        
-        <div class="leave">
-          <form id="comment-form">
-            <div class="form-group">
-              <h2>Lascia un commento</h2>
-              <label for="message">Message</label>
-              <textarea name="msg" id=""msg cols="30" rows="5" class="form-control" style="background-color: white;"></textarea>
-            </div>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="fullname" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="text" name="email" id="email" class="form-control">
-            </div>
-            <div class="form-group">
-              <p class="text-secondary">If you have a <a href="#" class="alert-link">gravatar account</a> your address <br> will be used to display your profile picture.</p>
-            </div>
-            
-            <div class="form-group">
-              <button type="submit" id="post" class="btn">Post Comment</button>
-            </div>
-          </form>
         </div>
+      </div>   -->  
+      
+      <p>
+        <blockquote>
+          "Verrà un giorno che l'uomo si sveglierà dall'oblio e finalmente comprenderà chi è veramente e a chi ha ceduto le redini della sua esistenza, a una mente fallace, menzognera, che lo rende e lo tiene schiavo."
+        </blockquote>
+        Il 17 febbraio 1600: in Campo de' Fiori a Roma veniva arso vivo il simbolo del libero pensiero, Giordano Bruno.  
+        L'uomo non è cattivo, è soltanto infelice. È la sua piccola mente la causa dell'infelicità.
+      </p>
+      
+      
+      <div class="riflessione">
+        <small class="text-body-secondary">Aggiornato il: 20/01/2024 </small>
         
-        
-        
+        <img src="ressources/eventi/riflessione shoah.jpg" id="shoah" alt="shoah">
+        <h4>
+          UNA RIFLESSIONE SULLA GIORNATA DELLA MEMORIA. <br>
+        </h4>
+        <p>
+          La Repubblica Italiana riconosce il giorno 27 Gennaio data dell'abbattimento dei cancelli di Auswitz "Giorno della Memoria" al fine di ricordare la Shoah (Sterminio del popolo Ebraico) le leggi razziali, la persecuzione italiana dei cittadini ebrei, gli italiani che hanno subito la deportazione, la prigione, la morte nonché coloro che, anche in campi e schieramenti diversi, si sono opposti al progetto di sterminio ed a rischio della propria vita hanno salvato altre vite e protetto i perseguitati". Così recita l'articolo della Legge del 20 Luglio 2000 N.211,che ha istituito il "Giorno della Memoria". Shoah é una parola ebraica che significa "catastrofe"per definire lo sterminio nazista, perché con il suo richiamo, essa dava implicitamente un senso a questo evento e alla morte insensata e incomprensibile di sei milioni di persone. Il Giorno della Memoria non è un omaggio alle vittime, ma una presa di coscienza collettiva del fatto che l'uomo é stato capace di questo.Serve a ricordare ai vivi che la violenza non é mai la giusta via e che bisogna sempre combatterla. Come ebbe modo di dire Liliana Segre "L'indifferenza genera violenza". Il gruppo di lettura della biblioteca comunale di Serrastretta Luis Scalese,avrebbe voluto organizzare una iniziativa per poter riflettere su quanto é accaduto 72 anni fa e su quanto purtroppo accade oggi nel mondo. Impegni precedenti non ci hanno permesso di attuarla, tuttavia, ugualmente Sabato 27 Gennaio dalle ore 16,00 saremo in biblioteca, con l'invito a quanti lo desiderano, di venire a trovarci per una riflessione insieme sulla Giornata della Memoria.
+        </p>
       </div>
-    <!---row-->
-       
-    <!-- </div> container-->
-   
-    
-    
-    <!--            -------- FIREBASE -------- -->
-    
-    <div id="comments"></div>
-    <form id="addComment">
-      <input type="text" id="comment" placeholder="Scrivi un commento...">
-      <button type="submit">Invia</button>
-    </form>
-    
-    <script>
-      // Configurazione di Firebase
-      var firebaseConfig = {
-        apiKey: "bigquery.googleapis.com",
-        authDomain: "il-tuo-auth-domain",
-        projectId: "library-project-88730"
-      };
-      // Inizializzazione di Firebase
-      firebase.initializeApp(firebaseConfig);
-      var db = firebase.firestore();
       
-      // Variabile per tenere traccia del pulsante "Cancella" corrente
-      var currentDeleteButton = null;
+      <!--        -------- FIREBASE --------      -->
       
-      // Visualizza i commenti
-      db.collection("comments").onSnapshot((snapshot) => {
-        document.getElementById("comments").innerHTML = "";
-        snapshot.forEach((doc) => {
-          var comment = document.createElement("p");
-          comment.textContent = doc.data().text;
-          
-          var deleteButton = document.createElement("button");
-          deleteButton.textContent = "Cancella";
-          deleteButton.addEventListener("click", (e) => {
-            e.preventDefault();
-            db.collection("comments").doc(doc.id).delete();
-          });
-          
-          var commentContainer = document.createElement("div");
-          commentContainer.className = "comment-container";
-          commentContainer.appendChild(comment);
-          commentContainer.appendChild(deleteButton);
-          
-          document.getElementById("comments").appendChild(commentContainer);
-          
-          // Se esiste un pulsante "Cancella" corrente, rimuovilo
-          if (currentDeleteButton) {
-            currentDeleteButton.remove();
-          }
-          
-          // Imposta il nuovo pulsante "Cancella" come corrente
-          currentDeleteButton = deleteButton;
-          
-          // Rimuovi il pulsante "Cancella" dopo 1 minuto
-          setTimeout(() => {
-            deleteButton.remove();
-            if (currentDeleteButton === deleteButton) {
-              currentDeleteButton = null;
+      <div id="comments"></div>
+      <form id="addComment">
+        <input type="text" id="comment" placeholder="Scrivi un commento...">
+        <button type="submit">Invia</button>
+      </form>
+      
+      <script>
+        // Configurazione di Firebase
+        var firebaseConfig = {
+          apiKey: "bigquery.googleapis.com",
+          authDomain: "il-tuo-auth-domain",
+          projectId: "library-project-88730"
+        };
+        // Inizializzazione di Firebase
+        firebase.initializeApp(firebaseConfig);
+        var db = firebase.firestore();
+        
+        // Variabile per tenere traccia del pulsante "Cancella" corrente
+        var currentDeleteButton = null;
+        
+        // Visualizza i commenti
+        db.collection("comments").onSnapshot((snapshot) => {
+          document.getElementById("comments").innerHTML = "";
+          snapshot.forEach((doc) => {
+            var comment = document.createElement("p");
+            comment.textContent = doc.data().text;
+            
+            var deleteButton = document.createElement("button");
+            deleteButton.textContent = "Cancella";
+            deleteButton.addEventListener("click", (e) => {
+              e.preventDefault();
+              db.collection("comments").doc(doc.id).delete();
+            });
+            
+            var commentContainer = document.createElement("div");
+            commentContainer.className = "comment-container";
+            commentContainer.appendChild(comment);
+            commentContainer.appendChild(deleteButton);
+            
+            document.getElementById("comments").appendChild(commentContainer);
+            
+            // Se esiste un pulsante "Cancella" corrente, rimuovilo
+            if (currentDeleteButton) {
+              currentDeleteButton.remove();
             }
-          }, 1 * 60 * 1000);  // 1 minuto in millisecondi
+            
+            // Imposta il nuovo pulsante "Cancella" come corrente
+            currentDeleteButton = deleteButton;
+            
+            // Rimuovi il pulsante "Cancella" dopo 1 minuto
+            setTimeout(() => {
+              deleteButton.remove();
+              if (currentDeleteButton === deleteButton) {
+                currentDeleteButton = null;
+              }
+            }, 1 * 60 * 1000);  // 1 minuto in millisecondi
+          });
         });
-      });
-      
-      // Aggiungi un commento
-      document.getElementById("addComment").addEventListener("submit", (e) => {
-        e.preventDefault();
-        db.collection("comments").add({
-          text: document.getElementById("comment").value
+        
+        // Aggiungi un commento
+        document.getElementById("addComment").addEventListener("submit", (e) => {
+          e.preventDefault();
+          db.collection("comments").add({
+            text: document.getElementById("comment").value
+          });
+          document.getElementById("comment").value = "";
         });
-        document.getElementById("comment").value = "";
-      });
-    </script> 
-  </main> 
-  
-  <br><br>
-  
-  <div class="finepag">
+      </script> 
+    </main> 
     
-    <p id="dove">Ci puoi trovare presso la Biblioteca Comunale "Luis Scalese", in Vico V Castello, di Serrastretta (CZ)</p>
-    <p id="ora">  dal lunedì al venerdì dalle ore 09.00 alle ore 12.00 </p>
-    <p id="e">&</p>
-    <p id="martedi">il martedì dalle ore 16.30 alle ore 18.00</p>
+    <br><br>
     
-    <br>
+    <!-- -------- finepag -------- -->
     
-    <!--- ---- SOCIAL ---- -->
-    <div class="social">
-      <a href="https://www.facebook.com/bibliotecacomunale.luisscalese/?locale=it_IT" class="fa fa-facebook"></a>
+    <div class="finepag">
       
-      <a href="https://www.instagram.com/biblio_serrastretta/" class="fa fa-instagram"></a>
+      <p id="dove">Ci puoi trovare presso la Biblioteca Comunale "Luis Scalese", in Vico V Castello, di Serrastretta (CZ)</p>
+      <p id="ora">  dal lunedì al venerdì dalle ore 09.00 alle ore 12.00 </p>
+      <p id="e">&</p>
+      <p id="martedi">il martedì dalle ore 16.30 alle ore 18.00</p>
+      
+      <br>
+      
+      <!--- ---- SOCIAL ---- -->
+      <div class="social">
+        <a href="https://www.facebook.com/bibliotecacomunale.luisscalese/?locale=it_IT" class="fa fa-facebook"></a>
+        
+        <a href="https://www.instagram.com/biblio_serrastretta/" class="fa fa-instagram"></a>
+      </div>
+      
+      
+      <!-- ------ FOOTER ------ -->
+      <footer>
+        <span>
+          Autrice sito: Serena Gigliotti
+          <a href="mailto:seregigliotti@gmail.com" style="color: beige"> <br> seregigliotti@gmail.com </a>
+        </span>
+      </footer>
     </div>
     
     
-    <!-- ------ FOOTER ------ -->
-    <footer>
-      <span>
-        Autrice sito: Serena Gigliotti
-        <a href="mailto:seregigliotti@gmail.com" style="color: beige"> <br> seregigliotti@gmail.com </a>
-      </span>
-    </footer>
-  </div>
-
+  </body>
+  </html>
   
-</body>
-</html>

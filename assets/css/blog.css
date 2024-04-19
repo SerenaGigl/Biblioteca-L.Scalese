@@ -1,5 +1,7 @@
 body {
     background-color: antiquewhite;
+    font-family: Libre Baskerville, serif;
+   
 }
 /*
 .comment-container {
@@ -25,8 +27,8 @@ h3 {
 main {
     display: flex;
     flex-direction: column;
+    font-size: 1em;
 }
-
 .rounded-circle {
     width: 9%;
     height: 9%;
@@ -75,7 +77,6 @@ h2 {
     color:black;
     font-weight: bold;
 }
-
 /*leave comment*/
 .leave {
     float: right;
@@ -86,13 +87,31 @@ h2 {
 .form-group p a{
     color: rgb(0, 98, 255); /*gravatar account*/
 }
-label{
+label {
     color: black;
     padding-right: 2%;
 }
 .form-group input,.form-group textarea{
     border: 1px solid rgb(0, 0, 0);
     border-radius: 2%;
+}
+/*------------------------*/
+.text-body-secondary {
+    padding-left: 85%;
+}
+blockquote {
+    text-align: center;
+    font-style: italic;
+}
+.riflessione {
+    text-align: justify;
+}
+.riflessione h4, p {
+    padding-left: 21%;
+}
+#shoah {
+    width: 20%;
+    float: left;
 }
 #post{
     margin: 1%;

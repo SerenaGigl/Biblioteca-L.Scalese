@@ -1,17 +1,27 @@
 main {
-    text-align: center;
     margin-top: 2%;
-}
-#poetando {
-    width: 20%;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
 }
 text {
     font-size: 1.5em;
     font-style: oblique;
 }
+.text-body-secondary {
+    padding-right: 0%;
+    padding-left: 80%;
+}
+
+.riflessione {
+    text-align: center;
+}
+#shoah,#arbiru,#poetando,#paraspiti,#donna,#primavera,#autonomia {
+    width: 23%;
+}
 .feste {
     font-family: 'Ephesis', cursive;
-    font-size: 2.7em;
+    font-size: 2.3em;
+    text-align: center
 }
 #holidays {
     width:40%;
@@ -29,6 +39,9 @@ text {
         width:50%;
         margin-top: 2%;
         border: 2 solid black;   
+    }
+    #arbiru {
+        width: 20%;
     }
     text {
         font-size: 1.3em;
