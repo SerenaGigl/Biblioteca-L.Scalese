@@ -2,6 +2,9 @@ main {
     margin-top: 2%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2em;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box
 }
 text {
     font-size: 1.5em;
@@ -11,12 +14,14 @@ text {
     padding-right: 0%;
     padding-left: 80%;
 }
-
+p {
+    text-align: justify;
+}
 .riflessione {
     text-align: center;
 }
 #shoah,#arbiru,#poetando,#paraspiti,#donna,#primavera,#autonomia {
-    width: 23%;
+    width: 30%;
 }
 .feste {
     font-family: 'Ephesis', cursive;
@@ -34,6 +39,8 @@ text {
         text-align: center;
         margin-top: 3%;
         font-size: 1em;
+        max-width: 1200px;
+        margin: 0 auto; 
     }
     #poetando {
         width:50%;
@@ -47,6 +54,26 @@ text {
         font-size: 1.3em;
         font-style: oblique;
     }
+    .text-body-secondary {
+        display: inline-block;
+        font-size: 0.8em;
+        padding-bottom: 5%;
+    }
+    h4 {
+        font-size: 1em;
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
+    .riflessione {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #shoah,#arbiru,#poetando,#paraspiti,#donna,#primavera,#autonomia {
+        width: 50%;
+    }
     .feste {
         font-family: Signature, serif;
         src: url("C:\Users\sery9\Desktop\Dafonts\signature_5\Signature.otf");
@@ -57,4 +84,43 @@ text {
         border-radius: 20%;
     }
     
+}
+@media only screen and (min-width: 601px) 
+{
+      main {
+        text-align: center;
+        margin-top: 3%;
+        font-size: 1em;
+    }
+    text {
+        font-size: 1.3em;
+        font-style: oblique;
+    }
+    .text-body-secondary {
+        display: inline-block;
+        font-size: 0.8em;
+        padding-bottom: 5%;
+    }
+    h4 {
+        font-size: 1em;
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
+    .riflessione {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feste {
+        font-family: Signature, serif;
+        src: url("C:\Users\sery9\Desktop\Dafonts\signature_5\Signature.otf");
+        font-size:2.1em;
+    }
+    #holidays {
+        width:70%;
+        border-radius: 20%;
+    }
 }
