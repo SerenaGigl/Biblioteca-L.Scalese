@@ -44,14 +44,6 @@ p {
         max-width: 1200px;
         margin: 0 auto; 
     }
-    #poetando {
-        width:50%;
-        margin-top: 2%;
-        border: 2 solid black;   
-    }
-    #arbiru {
-        width: 20%;
-    }
     text {
         font-size: 1.3em;
         font-style: oblique;
