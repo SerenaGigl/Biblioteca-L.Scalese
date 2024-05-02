@@ -37,21 +37,21 @@
         <h1> Biblioteca Comunale "Luis Scalese"</h1>
     </div>
     
-  <nav class="topnav">
-    <a class="active" href="Biblioteca-L.Scalese.html">Home</a>
-    <a href="news.html">News</a>
-    <a href="books.html">Libri</a>
-    <a href="events.html">Eventi</a>
-    <a href="blog.html">Blog</a>
+    <nav class="topnav">
+        <a class="active" href="Biblioteca-L.Scalese.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="books.html">Libri</a>
+        <a href="events.html">Eventi</a>
+        <a href="blog.html">Blog</a>
         
-      <!-- SEARCH
-      <div class="search-container">
-      <form action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
-    </div>
-  -->
+        <!-- SEARCH
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        -->
     </nav>
     
     <h2>Nuovi arrivi</h2>
@@ -144,18 +144,23 @@
     </p>
     <div class="pagination">
         <a href="#" onclick="window.history.back();">&laquo;</a>
-        <a href="books.html">1</a>
-        <a class="active" href="books-pag2.html">2</a>
+        <a href="books.html">1</a> <!--pagina 1-->
+        <a class="active" href="books-pag2.html">2</a>  <!-- pagina 2 -->
         <a href="#" onclick="avanti()">&raquo;</a>
         
         
         <!-- ---------- JAVASCRIPT ---------- -->
         <script>
-            var paginaCorrente = 1; // Imposta la pagina corrente|sets the current page
+            var paginaCorrente = 1; // Imposta la pagina corrente a 1
             
             function avanti() {
-                paginaCorrente++; // Incrementa la pagina corrente|increment the current page
-                window.location.href = "pagina" + paginaCorrente + ".html"; // Naviga alla pagina successiva|navigate to the next page
+                paginaCorrente++; // Incrementa la pagina corrente
+                if (paginaCorrente > 2) {
+                    paginaCorrente = 2; // Limita la pagina corrente a 2
+                }
+                if (paginaCorrente == 2) {
+                    window.location.href = "books-pag2.html"; // Naviga alla pagina 2
+                }
             }
         </script>
     </div>
