@@ -58,10 +58,12 @@ p {
     padding: 0.5% 1%;
     text-decoration: none;
     transition: background-color .3s;
+    background-color: transparent;
 }
 .pagination a:hover {
     background-color: rgba(0, 0, 0, 0.264);
 }
+
 
 @media only screen and (max-width: 600px){
     .container {
