@@ -38,21 +38,21 @@
         <h1> Biblioteca Comunale "Luis Scalese"</h1>
     </div>
     
-  <nav class="topnav">
-    <a class="active" href="Biblioteca-L.Scalese.html">Home</a>
-    <a href="news.html">News</a>
-    <a href="books.html">Libri</a>
-    <a href="events.html">Eventi</a>
-    <a href="blog.html">Blog</a>
+    <nav class="topnav">
+        <a class="active" href="Biblioteca-L.Scalese.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="books.html">Libri</a>
+        <a href="events.html">Eventi</a>
+        <a href="blog.html">Blog</a>
         
         <!-- SEARCH
-      <div class="search-container">
-      <form action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
-    </div>
-  -->
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        -->
     </nav>
     
     <div class="container" id="libri"> <!--Libri-->
@@ -142,17 +142,27 @@
     <br><br>
     
     <div class="pagination">
-        <a href="#" onclick="window.history.back();">&laquo;</a>
-        <a href="libri.html">1</a>
-        <a class="active" href="libri-pag2.html">2</a>
+        <a href="#" onclick="indietro()">&laquo;</a>
+        <a href="books.html">1</a>
+        <a class="active" href="books-pag2.html">2</a>
         <a href="#" onclick="avanti()">&raquo;</a>
         
         <script>
-            var paginaCorrente = 1; // Imposta la pagina corrente
+            var paginaCorrente = 2; // Imposta la pagina corrente a 2
             
             function avanti() {
                 paginaCorrente++; // Incrementa la pagina corrente
-                window.location.href = "pagina" + paginaCorrente + ".html"; // Naviga alla pagina successiva
+                if (paginaCorrente <= 3) { // Limita il numero di pagine a 3
+                    window.location.href = "pagina" + paginaCorrente + ".html"; // Naviga alla pagina successiva
+                }
+            }
+            
+            function indietro() {
+                paginaCorrente--; // Decrementa la pagina corrente
+                if (paginaCorrente < 1) { // Limita la pagina corrente a 1
+                    paginaCorrente = 1;
+                }
+                window.history.back(); // Torna alla pagina precedente
             }
         </script>
     </div>
