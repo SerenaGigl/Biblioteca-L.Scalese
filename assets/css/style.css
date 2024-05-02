@@ -165,7 +165,7 @@ footer {
 }
 
 
-/*-------MOBILE-------*/
+/*-------MOBILE 1 -------*/
 @media only screen and (max-width: 600px){
     html {
         position: fixed;
@@ -317,6 +317,8 @@ footer {
         text-decoration: none;
     }
 }
+
+/*MOBILE 2*/
 @media only screen and (min-width: 601px) 
 {
     body {
